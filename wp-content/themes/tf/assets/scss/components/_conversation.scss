@@ -1,0 +1,55 @@
+// ===================================
+// assets/scss/components/_conversation.scss
+// ==================================
+
+/* Component: conversation */
+.conversation {
+  border: 1px solid $border-color;
+  border-radius: $border-radius-section;
+
+  // El: header
+  &__header {
+    border-bottom: 1px solid $border-color;
+    @include padding( 22px 30px 27px );
+  }
+
+  // El: main
+  &__main {
+    @include padding( 17px 30px );
+    min-height: 350px;
+  }
+
+  // El: footer
+  &__footer {
+    @include padding( 17px 30px );
+  }
+
+  // El: field-wrap
+  &__field-wrap {
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  // El: field
+  &__field {
+    @include padding( 13px 88px 14px 19px );
+    font-size: $font-size-xxs;
+    border-radius: $border-radius-xl;
+    color: $body-color;
+    resize: none;
+    line-height: 1.5;
+    @extend %transition-fast;
+  }
+
+  // El: submit
+  &__submit {
+    @include position( $top: 0, $right: 0 );
+    @include padding( 13px 25px 17px );
+    border: none;
+
+    &.disabled,
+    :disabled {
+      @include opacity( 0.4 );
+    }
+  }
+}

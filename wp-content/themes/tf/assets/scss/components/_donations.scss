@@ -1,0 +1,38 @@
+// ===================================
+// assets/scss/components/_donations.scss
+// ==================================
+
+/* Component: donations */
+.donations {
+
+  .donation {
+    @include margin( 20px, 'top' );
+
+    &:first-child {
+      margin-top: 0px;
+    }
+  }
+}
+
+.donation {
+  @include padding( 25px 30px 29px );
+  background-color: #f4f4f4;
+  border-radius: $border-radius-lg;
+
+  // El: header
+  &__header {
+
+  }
+
+  // El: amount
+  &__amount {
+    font-size: $font-size-md;
+    font-weight: bold;
+    @include margin( 6px, 'bottom' );
+  }
+
+  // El: comments
+  &__comments {
+
+  }
+}

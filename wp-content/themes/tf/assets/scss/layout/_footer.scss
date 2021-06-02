@@ -1,0 +1,64 @@
+// =================================================
+// assets/scss/layout/_footer.scss
+// =================================================
+
+/* Layout: Footer */
+.footer {
+  @include all-colors( rgba( #fff, 0.6 ) );
+  border-radius: $border-radius-section;
+  background-color: $primary;
+  @include padding( 105px 0px 58px );
+  @include bg-img-full( 'footer-shape.svg', $primary, no-repeat, 32px bottom );
+
+  // El: Bottom
+  &__bottom {
+    @include margin( 140px, 'top' );
+
+    p {
+      @include font-size( 16px );
+    }
+  }
+
+  // El: Heading
+  .footer__heading {
+    color: #ffffff;
+    @include margin( 23px, 'bottom' );
+    @include margin( 43px, 'top' );
+    font-weight: 900;
+  }
+
+  // El: Brand
+  &__brand {
+
+    strong {
+      display: block;
+    }
+  }
+
+  // El: Nav
+  &__nav {
+    @include font-size( 18px );
+
+    li {
+      margin-top: 8px;
+    }
+
+    a {
+      @include padding( 3px 0px );
+      display: inline-block;
+    }
+  }
+
+  // El: Social
+  &__social {
+
+    i, span {
+      @extend %vertical-align;
+    }
+
+    i {
+      color: #ffffff;
+      @include margin( 10px, 'right' );
+    }
+  }
+}

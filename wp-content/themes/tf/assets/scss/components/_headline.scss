@@ -1,0 +1,28 @@
+// ===================================
+// assets/scss/components/_headline.scss
+// ==================================
+
+/* Component: Headline */
+.headline {
+  text-transform: uppercase;
+  text-decoration: underline;
+
+  span {
+    // border-bottom: 2px solid;
+  }
+}
+
+// Big Headline
+.big-headline {
+  @include font-size( 72px );
+  line-height: .861111111;
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
+}
+
+// Sub Headline
+.sub-headline {
+  color: $pink;
+  font-size: $font-size-lg;
+  line-height: 1.3333;
+}

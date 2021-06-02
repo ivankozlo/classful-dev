@@ -1,0 +1,159 @@
+// ====================================
+// assets/scss/components/_pagination.scss
+// ====================================
+
+/* Component: pagination */
+.pagination-parent {
+  position: relative;
+}
+
+.pagination {
+  @extend %clearfix;
+
+  // Sel: Link
+  &__link {
+    @include font-size( 18px );
+    font-family: $font__family--sans-serif-alt;
+    color: $color__text--base;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    &:before,
+    &:after {
+      display: inline-block;
+      font-family: $font__family--default;
+      @include font-size( 28px );
+      font-weight: bold;
+      line-height: 1;
+    }
+
+    @include media( 1330px, true ) {
+      width: 42px;
+      height: 170px;
+      @include position( $bottom: 0 );
+      display: inline-block;
+
+      span {
+        display: inline-block;
+        position: absolute;
+        @include margin( -9px, 'top' );
+      }
+
+      &:after {
+        position: absolute;
+        top: 100%;
+        left: 0;
+      }
+
+      // Mod: Prev
+      &--prev {
+        right: 100%;
+
+        > span {
+          transform: rotate( 270deg );
+          transform-origin: 72px 72px;
+        }
+
+        &:after {
+          content: '>';
+          transform: rotate( -270deg );
+          transform-origin: 25px 12px;
+        }
+      }
+
+      // Mod: Next
+      &--next {
+        left: 100%;
+
+        > span {
+          transform: rotate( -270deg );
+          transform-origin: 11px 26px;
+          text-align: right;
+        }
+
+        &:after {
+          content: '<';
+          transform: rotate( -270deg );
+          transform-origin: 25px 12px;
+        }
+      }
+    }
+
+    @include media( 1330px ) {
+
+      // Mod: Prev
+      &--prev {
+        float: left;
+
+        &:before {
+          content: '>';
+          margin-right: 10px;
+          transform: rotate( 90deg );
+        }
+      }
+
+      // Mod: Next
+      &--next {
+        float: right;
+
+        &:after {
+          content: '>';
+          margin-left: 10px;
+          transform: rotate( -90deg );
+        }
+      }
+    }
+
+    @include bp-medium {
+      float: none;
+      display: inline-block;
+      @include padding( 5px, 'top' );
+      @include padding( 5px, 'bottom' );
+      @include margin( 10px, 'top' );
+    }
+  }
+
+  @include bp-medium {
+    width: auto;
+    text-align: center;
+    display: block;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.wp-pagenavi {
+  text-align: center;
+  margin: 0;
+  display: inline-block;
+
+  a {
+    text-decoration: underline;
+  }
+
+  a, span {
+    display: inline-block;
+    margin: 0 3px;
+    padding: 5px 9px;
+    border-color: #ececec;
+    color: #4A4A4A;
+    font-weight: $font__weight--black;
+  }
+
+  a:hover,
+  span.current {
+    color: #838383;
+    text-decoration: none;
+  }
+
+  .previouspostslink {
+    float: left;
+  }
+
+  .nextpostslink {
+    float: right;
+  }
+}

@@ -1,0 +1,254 @@
+// =================================================
+// assets/scss/vendor/_bootstrap.scss
+// =================================================
+
+// Required
+// $font-size-base: 1.25rem; // 20px
+// $font-size-xxs: $font-size-base * .7; // 14px
+// $font-size-xs: $font-size-base * 0.8; // 16px
+// $font-size-sm: $font-size-base * .9; // 18px
+// $font-size-lg: $font-size-base * 1.333333333; // 24px
+
+// $font-size-base: .9375rem; // 15px
+// $font-size-xxs: $font-size-base * .933333333; // 14px
+// $font-size-xs: $font-size-base * 1.066666667; // 16px
+// $font-size-sm: $font-size-base * 1.2; // 18px
+// $font-size-lg: $font-size-base * 1.333333333; // 20px
+// $font-size-lg: $font-size-base * 1.6; // 24px
+
+$font-size-base: .9375rem; // 15px
+$font-size-xxs: .875rem; // 14px
+$font-size-xs: 1rem; // 16px
+$font-size-15: 1rem; // 15px
+$font-size-sm: 1.125rem; // 18px
+$font-size-md: 1.25rem; // 20px
+$font-size-lg: 1.5rem; // 24px
+
+$font-size-info-lg: .9375rem; // 15px
+$font-size-info: .75rem; // 12px
+
+$font-weight-base: 300;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 600;
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+
+// Variables Override
+// ===================================
+// assets/scss/vendor/_bootstra-variables.scss
+// ===================================
+//
+// Bootstrap Sass variables overwrite here.
+// ==================================
+
+// Gradient Colors
+$font-family-base: "MarkPro", $font-family-sans-serif;
+
+$black           : #203259;
+$primary         : #3F093D;
+$primary-light   : #FCCBC7;
+$secondary       : #00676B;
+$secondary-light : #E0F2F2;
+$reserved        : #FCCBC7;
+$dark            : #110F11;
+$darker          : darken( $dark, 8% );
+$danger          : #E63E46;
+$danger-light    : #FCE3E5;
+$warning         : #FEC40F;
+$warning-light   : #FFF3CF;
+// $success      : #15D164;
+$gray            : #F4F4F4;
+$border-color    : #DCDADA;
+
+$colors: (
+  "primary"   : $primary,
+  "secondary" : $secondary,
+  "danger"    : $danger,
+  "success"   : $success,
+  "warning"   : $warning,
+  "dark"      : $dark,
+  "gray"      : $gray
+);
+
+$theme-colors: (
+  "primary"   : $primary,
+  "secondary" : $secondary,
+  "danger"    : $danger,
+  "success"   : $success,
+  "warning"   : $warning,
+  "dark"      : $dark,
+  "gray"      : $gray
+);
+
+// Custom colors
+$pink: #FCCBC7;
+$orange: #FEC410;
+$green: #B0E43F;
+$blue: #2D6EED;
+$cyan: #49FFC3;
+$light-purple: #B8CAF5;
+$light-blue: #BAEBF7;
+$lighter-blue: #F1FBFD;
+
+// Darken Versions
+$primary-hover   : darken( $primary, 5% );
+$secondary-hover : darken( $secondary, 5% );
+$danger-hover    : darken( $danger, 5% );
+$success-hover   : darken( $success, 5% );
+$warning-hover   : darken( $warning, 5% );
+$info-hover      : darken( $info, 5% );
+
+// Body color
+$body-color: $dark;
+$text-color-light: #545454;
+
+
+$headings-color: $dark;
+$text-muted: rgba( $dark, 0.3 );
+
+$link-color: $primary;
+$link-color: $primary;
+$link-hover-color: $primary-hover;
+
+// Font Size
+// $font-size-base: .75rem;
+// $font-size-lg: $font-size-base * 1.166666667;
+$font-weight-base: 300;
+$font-weight-medium: 500;
+
+// Radius
+$border-radius: 0.25rem; // 4px
+$border-radius-lg: 0.375rem; // 6px
+$border-radius-xl: 0.5rem; // 6px
+$border-radius-section: 0.75rem;
+
+
+// Headings
+$headings-font-weight: 700;
+
+$h1-font-size : 3.25rem; // 52px
+$h2-font-size : 2.625rem; // 42px
+$h3-font-size : 2rem; // 32px
+$h4-font-size : 1.75rem; // 28px
+$h5-font-size : 1.25rem; // 20px
+$h6-font-size : 1.25rem; // 20px
+
+//
+// Forms
+//
+
+// Input
+// $input-btn-padding-y: 9px;
+// $input-btn-padding-x: 45px;
+$input-height: auto;
+$input-padding-y: 25px;
+$input-padding-x: 25px;
+// $input-font-family: ;
+// $input-font-size: ;
+$input-font-weight: normal;
+$input-line-height: 1.208333333;
+$input-color: $dark;
+$input-placeholder-color: rgba(#545454, 0.6);
+$input-bg: $gray;
+// $input-border-width: ;
+$input-border-color: transparent;
+$input-border-radius: $border-radius;
+// $input-box-shadow: ;
+// $input-transition: ;
+$input-focus-bg: $input-bg;
+$component-active-bg: $primary;
+$input-btn-focus-width: 4px;
+$input-focus-box-shadow: 0 0 0 $input-btn-focus-width rgba( $primary, 0.25 );
+$input-focus-border-color: transparent;
+
+$enable-validation-icons: false;
+
+// Custom Checkbox
+$custom-control-indicator-size: 1.5rem;
+$custom-checkbox-indicator-border-radius: $border-radius;
+$custom-control-indicator-checked-bg: $secondary;
+$custom-checkbox-indicator-icon-checked: none;
+$custom-checkbox-indicator-indeterminate-border-color: $secondary;
+$custom-control-indicator-border-width: 2px;
+$custom-control-indicator-border-color: #e5e5e5;
+$custom-control-indicator-checked-border-color: $secondary;
+
+$custom-control-indicator-active-bg: darken( $secondary, 5% );
+$custom-control-indicator-active-border-color: darken( $secondary, 5% );
+
+$custom-control-indicator-focus-box-shadow: 0 0 0 0.1rem rgba( $secondary, 0.5 );
+$custom-control-indicator-focus-border-color: $secondary;
+
+// Buttons
+$btn-font-weight: bold;
+$btn-font-size: $font-size-base;
+
+$btn-padding-y: 13px;
+$btn-padding-x: 26px;
+$btn-line-height: 1.37;
+
+$btn-font-size-lg: $font-size-base;
+$btn-border-radius-lg: 1px;
+$btn-padding-y-lg: 12px;
+$btn-padding-x-lg: 60px;
+
+// Grid
+$grid-gutter-width: 20px;
+
+// Navbar
+$navbar-padding-y: 0px;
+$navbar-padding-x: 0px;
+
+$navbar-nav-link-padding-x: 1rem;
+
+// $nav-link-height: 100px;
+$navbar-dark-color: #fff;
+$navbar-dark-active-color: $primary;
+$navbar-dark-hover-color: $primary;
+
+$navbar-light-color: $dark;
+$navbar-light-hover-color: $body-color;
+$navbar-light-active-color: $body-color;
+$navbar-light-disabled-color: rgba($body-color, .3);
+
+// Dropdowns
+$caret-width: .3125rem;
+$dropdown-item-padding-y: 0.9375rem;
+$dropdown-item-padding-x: 1.1875rem;
+$dropdown-link-color: $gray-400;
+// $dropdown-font-size: $font-size-base;
+
+// Spacing
+//
+//
+
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.25),
+  5: ($spacer * 1.5),
+  6: ($spacer * 2),
+  7: ($spacer * 3),
+  8: ($spacer * 3.5),
+);
+
+// Alerts
+//
+// Define alert colors, border radius, and padding.
+
+$alert-padding-y:                   0.75rem;
+$alert-padding-x:                   1.0625rem;
+$alert-margin-bottom:               1rem;
+$alert-border-radius:               $border-radius-lg;
+$alert-link-font-weight:            $font-weight-bold;
+$alert-border-width:                0px;
+
+// Progress bars
+
+$progress-height:                   0.187rem;
+$progress-bg:                       #E7E2E7;

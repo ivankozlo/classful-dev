@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="27px" viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon verified</title>
+    <desc>Created with Sketch.</desc>
+    <g id="PROFILE-PAGE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-749.000000, -140.000000)" id="banner">
+            <g transform="translate(0.000000, 72.000000)">
+                <g id="user-info" transform="translate(170.000000, 57.000000)">
+                    <g id="info" transform="translate(230.000000, 0.000000)">
+                        <g id="verified" transform="translate(349.000000, 11.000000)">
+                            <g id="icon-verified">
+                                <polygon id="Star" fill="#FFD100" points="13.5 23.8464844 9.32827058 26.339263 7.41848907 21.8704817 2.57827058 21.4351009 3.65990861 16.6972395 0 13.5 3.65990861 10.3027605 2.57827058 5.56489909 7.41848907 5.12951831 9.32827058 0.66073703 13.5 3.15351563 17.6717294 0.66073703 19.5815109 5.12951831 24.4217294 5.56489909 23.3400914 10.3027605 27 13.5 23.3400914 16.6972395 24.4217294 21.4351009 19.5815109 21.8704817 17.6717294 26.339263"></polygon>
+                                <polyline id="Path-7" stroke="#FFFFFF" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" points="9.94736842 14.2105263 12.5526316 16.6973684 17.7631579 11.7236842"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

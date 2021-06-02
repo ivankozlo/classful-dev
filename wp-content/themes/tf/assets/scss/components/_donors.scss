@@ -1,0 +1,39 @@
+// ===================================
+// assets/scss/components/_donors.scss
+// ==================================
+
+/* Component: donors */
+.donor-list {
+
+  .donor-item {
+    @include margin( 10px, 'top' );
+
+    &:first-child {
+      margin-top: 0px;
+    }
+  }
+}
+
+.donor-item {
+
+  // El: inner
+  &__inner {
+    @include padding( 10px 17px );
+    display: flex;
+    align-items: center;
+    background-color: $gray;
+    border-radius: $border-radius-lg;
+  }
+
+  // El: image
+  &__image {
+    height: 30px;
+    width: 30px;
+  }
+
+  // El: text
+  &__text {
+    font-size: $font-size-xxs;
+    margin: 0 0 0 calc-rem( 12px );
+  }
+}

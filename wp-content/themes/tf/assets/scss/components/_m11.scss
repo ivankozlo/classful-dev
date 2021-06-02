@@ -1,0 +1,64 @@
+// ====================================
+// assets/scss/components/_m11.scss
+// ====================================
+
+/* Component: M11 */
+.m11 {
+  @include padding( 140px, 'top' );
+  @include padding( 167px, 'bottom' );
+
+  // El: rows
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // El: text-col
+  &__text-col {
+    line-height: 1.7;
+
+    h2 {
+      @include margin( 25px, 'bottom' );
+      line-height: 1.1923;
+    }
+
+    p {
+      @include margin( 30px, 'bottom' );
+      @extend %last-child-no-margin;
+    }
+
+    // Responsive: > Large
+    @include bp-large-min {
+      flex-basis: per-calc( 535px );
+      max-width: per-calc( 535px );
+      margin-left: per-calc( 175px );
+    }
+  }
+
+  // El: image-col
+  &__image-col {
+    position: relative;
+
+    // Responsive: > Large
+    @include bp-large-min {
+      flex-basis: per-calc( 425px );
+      max-width: per-calc( 425px );
+    }
+  }
+
+  // El: image
+  &__image {
+    padding-bottom: aspect-ratio( 425px 460px );
+    border-radius: calc-rem( 12px );
+  }
+
+  // El: image-shape
+  &__image-shape {
+    position: absolute;
+    user-select: none;
+    bottom: -94px;
+    right: -76px;
+    z-index: 2;
+  }
+}

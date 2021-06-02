@@ -1,0 +1,185 @@
+.post-type{
+  display: flex;
+  justify-content: center;
+}
+.post-type div{
+  margin: 10px 30px;
+  cursor: pointer;
+  color: #ccc;
+}
+.post-type div.active{
+  color: black;
+}
+
+.page-wrapper{
+  margin: 40px auto;
+}
+
+.create-post-section{
+  width: 500px;
+  margin: 0 auto;
+}
+
+.custom-card{
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 8px;
+  padding: 30px;
+  margin: 40px auto;
+}
+
+.create-post-section .custom-card .avatar{
+  width: 40px !important;
+  height: 40px !important;
+}
+.custom-card-description{
+  margin-left: 40px;
+  width: 80%;
+}
+.custom-card-description .user-name{
+  display: flex;
+  justify-content: space-between;
+}
+.custom-card-description .user-name .sbHolder{
+  width: 150px !important;
+}
+.custom-card-description .user-name .sbHolder .sbOptions{
+  min-width: 154px;
+  overflow: hidden;
+}
+.custom-card-description .user-name .sbHolder .sbToggle {
+  height: 35px;
+  width: 20px;
+}
+.custom-card-description .user-name .sbHolder .sbSelector{
+  border: none;
+  padding: 7px;
+  outline: none;
+}
+.file-upload{
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.file-upload i{
+  margin-left: 20px;
+  font-size: 25px;
+  color: #00676b;
+}
+.file-upload input{
+  position: absolute;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  opacity: 0;
+}
+.custom-card .preview{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+.custom-card .preview img{
+  border-radius: 8px;
+}
+
+.form-input{
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+
+.tags-input-field{
+
+}
+.tags-input-field input{
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  line-height: 50px;
+  width: 80%;
+}
+.tags-input-field button{
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  line-height: 50px;
+  width: 20%;
+  background: transparent;
+}
+.tags{
+  flex-wrap: wrap;
+}
+.tag{
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  line-height: 25px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.tag span{
+  padding: 0 10px;
+}
+.tag button{
+  border: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
+  background: transparent;
+  padding: 0 8px;
+}
+
+.posts-section{
+  width: 600px;
+  margin: 0 auto;
+}
+.posts-section .post-attachment{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 300px;
+}
+.posts-section .post-attachment img{
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.posts-section .post-attachment-space{
+  height: 300px;
+}
+.posts-section .custom-card .avatar{
+  width: 50px !important;
+  height: 50px !important;
+}
+.post-tags{
+  height: 25px;
+  overflow: hidden;
+}
+.post-tags.showall{
+  height: auto;
+}
+.post-tags .post-tag{
+  color: #008efe;
+  font-weight: 800;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.showmore{
+  cursor: pointer;
+}
+.post-actions .post-action{
+  font-size: 20px;
+  cursor: pointer;
+}

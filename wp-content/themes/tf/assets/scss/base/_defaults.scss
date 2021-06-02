@@ -1,0 +1,73 @@
+// ==================================
+// SCSS/BASE/_DEFAULTS.SCSS
+// ==================================
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  // font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  min-height: 100%;
+}
+
+.wrapper {
+  min-height: 100vh;
+}
+
+strong {
+  font-weight: $font-weight-bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: $font-size-md;
+
+  a {
+    color: $primary;
+
+    &:hover, &:active, &:focus {
+      color: $primary-hover;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+
+}
+
+h1, .h1 {
+
+}
+
+h2, .h2 {
+
+}
+
+h3, .h3 {
+
+}
+
+h4, .h4 {
+
+}
+
+h5, .h5 {
+
+}
+
+h6, .h6 {
+
+}

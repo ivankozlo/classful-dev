@@ -1,0 +1,33 @@
+// ===================================
+// assets/scss/components/_stats-box.scss
+// ==================================
+
+/* Component: stats-box */
+.stats-box {
+  border: 1px solid $border-color;
+  @include padding( 32px 30px 30px );
+  border-radius: $border-radius-section;
+  position: relative;
+  min-height: 100%;
+
+  // El: variation
+  &__variation {
+    @include position( $top: 9px, $right: 9px );
+    background-color: $gray;
+    @include padding( 5px 6px );
+    font-size: $font-size-info;
+    border-radius: calc-rem( 5px );
+    font-weight: $font-weight-bold;
+  }
+
+  // El: heading
+  &__heading {
+    line-height: 1.875;
+    @include margin( 3px, 'bottom' );
+  }
+
+  // El: text
+  &__text {
+    line-height: normal;
+  }
+}

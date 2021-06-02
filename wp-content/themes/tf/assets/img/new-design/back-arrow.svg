@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>back-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Teacher---Profile-(Updates)" transform="translate(-369.000000, -223.000000)" stroke-width="2">
+            <g id="Group-30" transform="translate(335.000000, 194.000000)">
+                <g id="back-arrow" transform="translate(35.000000, 30.000000)">
+                    <g id="Group-34" transform="translate(15.000000, 15.000000)" stroke="#050505" stroke-linecap="round">
+                        <polyline id="Path" points="10 10 5 5 10 0"></polyline>
+                        <polyline id="Path" transform="translate(2.500000, 5.000000) scale(-1, 1) translate(-2.500000, -5.000000) " points="5 10 0 5 5 0"></polyline>
+                    </g>
+                    <circle id="Oval" stroke="#E5E5E5" cx="20" cy="20" r="20"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

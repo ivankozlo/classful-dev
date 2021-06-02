@@ -1,0 +1,27 @@
+// ===================================
+// assets/scss/components/_quick-responses.scss
+// ==================================
+
+/* Component: quick-responses */
+.quick-responses {
+
+  a {
+    @include margin( 6px, 'right' );
+    @include margin( 10px, 'bottom' );
+    border: 1.5px solid rgba( $secondary, 0.4 );
+    border-radius: $border-radius-xl;
+    @include padding( 14px 22px 15px 19px );
+    font-weight: normal;
+    font-size: $font-size-xxs;
+    color: $secondary;
+    display: inline-block;
+    vertical-align: middle;
+    @extend %transition-fast;
+    line-height: normal;
+
+    &:hover {
+      border-color: $secondary;
+      text-decoration: none;
+    }
+  }
+}

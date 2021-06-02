@@ -1,0 +1,1501 @@
+/**
+ * General
+**/
+.__hidden{
+    display: none !important;
+}
+
+.form-control-with-button{
+    flex-grow: 1;
+    position: relative;
+}
+
+.form-control-with-button button{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+}
+
+.form-control-with-button input{
+    position: static !important;
+}
+
+.btn-hoot-icon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 220px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.btn-with-icon.btn-hoot-icon i,
+.btn-hoot-icon i{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 13px 0 0;
+    margin-right: 13px;
+}
+
+.btn-with-icon.btn-hoot-icon i:after,
+.btn-hoot-icon i:after{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0;
+    width: 1px;
+    height: 62%;
+    background-color: #068d92;
+}
+
+/** 
+ * NEW Compose Modal 
+**/
+
+/** message link when importing contacts (gmail, yahoo & outlook) **/
+.hoot-open-modal-email-send{
+    color: inherit;
+}
+
+#hoot-editor .modal-content{
+    max-width: 600px;
+}
+
+#hoot-editor button.close{
+    left: auto !important;
+    right: 50px;
+    top: 35px;
+}
+
+/** forms **/
+#hoot-editor{
+    width: 100%;
+}
+
+#hoot-editor h4{
+    margin-bottom: 20px;
+}
+
+/** nav **/
+.hoot-editor-nav{
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.hoot-editor-nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.hoot-editor-nav li{
+    margin-right: 10px;
+}
+
+.hoot-editor-nav li a{
+    display: block;
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #E8E6E8;
+    color: #C8C8C8;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 100%;
+    text-decoration: none !important;
+}
+
+.hoot-editor-nav li i{
+    color: inherit;
+}
+
+.hoot-editor-nav li[data-target="facebook"].active.connected a{
+    color: #1877f2;
+    border-color: #1877f2;
+}
+
+.hoot-editor-nav li[data-target="twitter"].active.connected a{
+    color: #1da1f2;
+    border-color: #1da1f2;
+}
+
+.hoot-editor-nav li[data-target="pinterest"].active.connected a{
+    color: #bd081c;
+    border-color: #bd081c;
+}
+
+.hoot-editor-nav li[data-target="youtube"].active.connected a{
+    color: #ff0000;
+    border-color: #ff0000;
+}
+
+/** forms footer **/
+.hoot-editor-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.hoot-editor-footer-buttons{
+    position: relative;
+}
+
+.hoot-editor-footer-buttons [data-action="schedule_post"]{
+    width: 100%;
+    max-width: 100%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.376471px;
+    color: #FFFFFF;
+}
+
+.hoot-editor-footer-buttons .start_date_component{
+    position: static;
+}
+
+.hoot-editor-footer-buttons .start_date_component .hc-btn-open{
+    display: none;
+}
+
+.hoot-editor-footer-icons{
+    display: inline-flex;
+    align-items: center;
+}
+
+.hoot-editor-footer-icons i{
+    display: inline-flex;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    color: #3F093D;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#hoot-editor[data-social="youtube"] .hoot-editor-footer-icons i[data-type="image"],
+#hoot-editor[data-social="pinterest"] .hoot-editor-footer-icons i[data-type="video"]{
+    display: none !important;
+}
+
+.hoot-editor-footer-schedule-info{
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.85;
+    line-height: 1.3;
+    text-align: right;
+    color: #ACACAC;
+}
+
+.start_date_component .hc-modal{
+    width: 320px;
+    max-width: initial;
+}
+
+/** upload area **/
+#hoot-uploaded-items{
+    display: flex;
+    align-items: center;
+}
+
+.hoot-uploaded-item{
+    position: relative;
+    margin-right: 20px;
+}
+
+.hoot-uploaded-item video,
+.hoot-uploaded-item img{
+    max-width: 80px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.hoot-uploaded-item span{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.hoot-btn-sync-fb-pages,
+.hoot-btn-sync-yt-categories,
+.hoot-btn-sync-pt-boards{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/** Inputs **/
+.hoot-editor-input-video-title-wrapper,
+.hoot-editor-input-url-wrapper,
+.hoot-post-input-video-title-wrapper{
+    display: none;
+}
+
+#hoot-editor[data-type="text"] .hoot-editor-input-url-wrapper,
+#hoot-editor[data-type="url"] .hoot-editor-input-url-wrapper,
+#hoot-editor[data-social="pinterest"] .hoot-editor-input-url-wrapper,
+#hoot-editor[data-type="video"] .hoot-editor-input-video-title-wrapper{
+    display: block;
+}
+
+.hoot-editor-input-text-wrapper{
+    position: relative;
+    max-width: 100%;
+}
+
+.hoot-editor-input-text-preview{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: #222222;
+    padding: 0 19px 17px 0;
+    margin-bottom: 1rem;
+    outline: 0 !important;
+    border: 0 !important;
+}
+
+.hoot-editor-input-text-preview.error{
+    color: #d94343 !important;
+}
+
+.emojiPicker{
+    z-index: 999999 !important;
+}
+
+.emojiPicker > nav .tab .emoji{
+    width: 100% !important;
+    min-width: 100% !important;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.emojiPickerIconWrap{
+    display: block !important;
+}
+
+.emojiPickerIcon{
+    width: 28px !important;
+    height: 28px !important;
+    top: 2px !important;
+    right: 2px !important;
+}
+
+.emojiPicker section.search input{
+    min-height: 20px !important;
+    height: 20px !important;
+}
+
+.ui-timepicker-select{
+    min-height: 22px !important;
+}
+
+#hoot-editor label[for="checkboxall"]{
+    margin-left: 25px;
+}
+
+/** media **/
+.hoot-editor-media-preview {
+    position: relative;
+    display: none;
+    width: 150px;
+    max-height: 150px;
+    margin-top: 2.5rem;
+}
+
+.hoot-editor-media-preview img,
+.hoot-editor-media-preview video{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.hoot-editor-media-preview img{
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+}
+
+.hoot-editor-media[data-mode="preview"] .hoot-editor-media-preview{
+    display: block;
+}
+
+.hoot-editor-media-preview i{
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.1);
+}
+
+.hoot-editor-media-preview .delete-photo i{
+    font-size: 14px;
+}
+
+.hoot-editor-media-preview .edit-photo{
+    display: none;
+}
+
+.hoot-editor-media[data-mode="preview"][data-type="image"] .hoot-editor-media-preview .edit-photo{
+    display: block;
+}
+
+.hoot-editor-media-edit {
+    display: none;
+    max-width: 100%;
+    clear: both;
+}
+
+.hoot-editor-media[data-mode="edit"] .hoot-editor-media-edit{
+    display: block;
+}
+
+.hoot-editor-media-controls{
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
+
+.hoot-editor-media[data-mode="edit"] .hoot-editor-media-controls{
+    display: block;
+}
+
+/**
+ * Preview 
+**/
+.hoot-preview-media-loading{
+    display: none;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.hoot-preview-title{
+    display: none;
+}
+
+.hoot-preview-media{
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.02);
+    display: none;
+}
+
+#hoot-preview[data-type="image"] .hoot-preview-media,
+#hoot-preview[data-type="video"] .hoot-preview-title,
+#hoot-preview[data-type="video"] .hoot-preview-media{
+    display: block;
+}
+
+.hoot-preview-media img, 
+.hoot-preview-media video{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+p.hoot-preview-url,
+p.hoot-preview-text{
+    display: none;
+    font-size: 1rem;
+    margin: 0;
+}
+
+#hoot-preview[data-type="image"] .hoot-preview-text,
+#hoot-preview[data-type="video"] .hoot-preview-text{
+    background-color: white;
+}
+
+.hoot-preview-title{
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+/* preview email */
+body.outreach-email #hoot-preview{
+    background-color: #f9f9f9;
+}
+
+#hoot-preview[data-mode="email"] .hoot-preview-title,
+#hoot-preview[data-mode="email"] p.hoot-preview-text{
+    display: block;
+}
+
+#hoot-preview[data-mode="email"] .hoot-preview-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    text-align: center;
+    color: #0E020E;
+}
+
+#hoot-preview[data-mode="email"] p.hoot-preview-text{
+    padding: 30px;
+    border-radius: 8px;
+}
+
+body.outreach-email #hoot-preview .hoot-preview-text .btn:focus{
+    color: white;
+}
+
+#hoot-preview[data-type="image"] .__url_preview,
+#hoot-preview[data-type="video"] .__url_preview{
+    display: none !important;
+}
+
+/* preview facebook */
+.hoot-preview-post{
+    padding: 30px;
+    background-color: white;
+}
+
+.hoot-preview-post .__url_preview img,
+.hoot-preview-post .__media video,
+.hoot-preview-post .__media img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 0.75rem;
+}
+
+.hoot-preview-post .__video_title{
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+.hoot-preview-post .__page_picture{
+    margin-right: 15px;
+    max-width: 60px;
+    max-height: 60px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+}
+
+.hoot-preview-post .__text{
+    margin: 0 0 25px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #222222;
+    padding-left: 75px;
+    padding-right: 30px;
+}
+
+.hoot-preview-post .__text strong{
+    color: #1CA0F0;
+    font-weight: normal;
+}
+
+.hoot-preview-post-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #222222;
+}
+
+.hoot-preview-post-header .__page_username,
+.hoot-preview-post-header .__queue_date{
+    color: #aaa;
+    font-weight: normal;
+    font-size: 0.95rem;
+}
+
+.hoot-preview-post-header > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.hoot-preview-post .__url_preview {
+    text-decoration: none !important;
+    color: #222222 !important;
+}
+
+.hoot-preview-post .__url_preview *{
+    display: block;
+}
+
+.hoot-preview-post .__url_preview_content{
+    background-color: #f1f1f1;
+    padding: 15px;
+}
+
+.hoot-preview-post .__url_preview img{
+    border-radius: 0.75rem 0.75rem 0 0;
+}
+
+.hoot-preview-post .__url_preview_content{
+    border-radius: 0 0 0.75rem 0.75rem;
+}
+
+/**
+ * Analytics 
+**/
+#hoot-analytics[data-filter="all"] .performance-indicator{
+    display: none;
+}
+
+#hoot-analytics-header{
+    display: flex;
+    align-items: center;
+}
+
+.hoot-analytics-view-graph{
+    font-weight: bold;
+    margin-top: -12px;
+    margin-left: 20px;
+}
+
+/** tooltip **/
+.custom-tooltip--outreach{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    left: auto !important;
+    max-width: 100px;
+    transform: none !important;
+}
+
+/**
+ * Pagination
+**/
+.hoot-pagination{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.hoot-pagination span,
+.hoot-pagination a{
+    text-decoration: none !important;
+    outline: 0 !important;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    border-radius: 4px;
+    background: transparent;
+    color: #34335B;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hoot-pagination span{
+    opacity: 0.4;
+}
+
+.hoot-pagination a:hover{
+    background: #f1f1f1;
+}
+
+.hoot-pagination a.hoot-pagination-active{
+    background: #00676b;
+    color: white;
+}
+
+/**
+ * Alert
+**/
+.hoot-alert{
+    padding: 15px;
+    margin: 10px 0;
+    background: #e1e1e1;
+}
+
+.hoot-alert p{
+    margin: 0;
+    padding: 0;
+}
+
+/**
+ * Contact/Group Modal
+**/
+#hoot-modal-group .modal-content,
+#hoot-modal-contact .modal-content{
+    max-width: 600px;
+}
+
+#hoot-modal-group[data-mode="edit"] [data-mode="add"],
+#hoot-modal-group[data-mode="add"] [data-mode="edit"],
+#hoot-modal-contact[data-mode="edit"] [data-mode="add"],
+#hoot-modal-contact[data-mode="add"] [data-mode="edit"]{
+    display: none;
+}
+
+#hoot-modal-group .modal-footer,
+#hoot-modal-contact .modal-footer{
+    justify-content: flex-end;
+    display: flex;
+}
+
+#hoot-modal-group .hoot-delete-group,
+#hoot-modal-contact .hoot-delete-contact{
+    justify-self: flex-start;
+    margin-right: auto !important;
+}
+
+/**
+ * Button option wrapper
+**/
+.hoot-button-options-modal-wrapper{
+    position: relative;
+}
+
+.hoot-button-options-modal-wrapper > .btn{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.hoot-button-options-modal{
+    position: absolute;
+    right: -100%;
+    bottom: 110%;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms ease-in;
+    width: 220px;
+    background-color: white;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px 0;
+}
+
+.hoot-button-options-modal.show{
+    visibility: visible;
+    opacity: 1;
+}
+
+.hoot-button-options-modal h4{
+    font-size: 1.2rem;
+}
+
+.hoot-button-options-modal > * {
+    display: block;
+    width: 100%;
+    padding: 5px 30px;
+}
+
+.hoot-button-options-modal a {
+    text-decoration: none;
+    color: #000;
+}
+
+.hoot-button-options-modal a:hover {
+    color: #555;
+}
+
+.hoot-button-options-modal a:last-child {
+    color: #00676b;
+    position: relative;
+    padding: 10px 30px 5px;
+    margin-top: 10px;
+}
+
+.hoot-button-options-modal a:last-child:before {
+    content: " ";
+    width: 70%;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate( -50%, 0 );
+}
+
+/**
+ * Email Form
+**/
+#hoot-email a{
+    color: #00676b;
+}
+
+#hoot-email [name="hoot-input-message"]{
+    min-height: 250px;
+}
+
+#hoot-email .hoot-input-email-group{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#hoot-email .hoot-input-email-group .form-control-with-button{
+    width: 100%;
+}
+
+#hoot-email .hoot-input-email-group a{
+    margin-top: 15px;
+}
+
+#hoot-email .hoot-emails-selected{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#hoot-email .hoot-emails-selected li{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0 5px 14px;
+    margin: 15px 15px 0 0;
+    background-color: #F5F5F5;
+    border-radius: 8px;
+}
+
+#hoot-email .hoot-emails-selected li p{
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+#hoot-email .hoot-emails-selected li span{
+    padding: 0 14px;
+    cursor: pointer;
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hoot-email [type="submit"] i.error{
+    color: #d94343 !important;
+}
+
+#hoot-email .hoot-component-datetime-submit{
+    justify-content: center;
+}
+
+#hoot-email .hoot-email-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#hoot-email .hoot-email-footer-frequency{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#hoot-email .hoot-email-footer-frequency > div{
+    width: 100%;
+}
+
+#hoot-email .hoot-email-footer-buttons{
+    margin-top: 30px;
+    display: block;
+}
+
+#hoot-email .hoot-email-footer-buttons > *{
+    width: 100%;
+}
+
+#hoot-email .hoot-email-footer-buttons .hoot-component-datetime-submit{
+    margin-bottom: 15px;
+}
+
+.hoot-email-footer-buttons-automate{
+    text-align: center;
+    margin-top: 30px;
+    width: 100% !important;
+}
+
+#hoot-email[data-schedule="automate"] [data-schedule="once"],
+#hoot-email[data-schedule="once"] [data-schedule="automate"]{
+    display: none !important;
+}
+
+.hoot-email-contacts-subject-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hoot-email-contacts-subject-wrapper .form-group{
+    margin-bottom: 0;
+}
+
+.hoot-email-contacts-subject-wrapper .form-group-1{
+    flex-grow: 1;
+}
+
+.hoot-email-contacts-subject-wrapper .form-group-2{
+    flex-basis: 335px;
+    margin-left: 30px;
+}
+
+#hoot-email .hoot-email-contacts-subject-wrapper .hoot-emails-selected{
+    flex-basis: 100%;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+/** Schedule preview **/
+.hoot-email-schedule-preview{
+    background-color: #f5f5f5;
+    text-transform: capitalize;
+    width: 100%;
+    margin: 25px auto 0;
+    padding: 10px;
+}
+
+.hoot-email-schedule-preview > div{
+    padding: 10px;
+    border-bottom: 1px solid #efefef;
+}
+
+.hoot-email-schedule-preview > div:last-child{
+    border-bottom: 0;
+}
+
+.hoot-email-schedule-preview span{
+    margin-right: 15px;
+}
+
+/**
+ * Components
+**/
+
+/** Datetime Submit **/
+.hoot-component-datetime-submit{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hoot-component-datetime-submit .hoot-input-datetime-wrapper{
+    z-index: 999;
+    width: 300px;
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -11.3%);
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.hoot-component-datetime-submit .hoot-input-datetime-wrapper:after{
+    content: ' ';
+    position: absolute;
+    left: 23%;
+    bottom: -10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ffffff;
+    clear: both;
+}
+
+.hoot-component-datetime-submit .__submit_wrapper{
+    display: inline-block;
+}
+
+.hoot-component-datetime-submit .__submit_wrapper .btn{
+    padding-left: 65px;
+}
+
+.hoot-component-datetime-submit .__submit_wrapper i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.hoot-component-datetime-submit .__submit_wrapper i:after{
+    content: " ";
+    height: 22px;
+    width: 1px;
+    background-color:#329296;
+    margin-left: 15px;
+}
+
+.hoot-component-datetime-submit[data-clicked="1"] .__submit_wrapper i{
+    color: #555555;
+}
+
+.hoot-component-datetime-submit[data-clicked="1"] .__submit_wrapper i:after{
+    background-color:#555555;
+}
+
+.hoot-component-datetime-submit .hoot-input-datetime{
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+.hoot-component-datetime-submit #ui-datepicker-div{
+    display: block !important;
+    border: 0;
+}
+
+.hoot-component-date-picker-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hoot-component-date-picker-buttons .btn{
+    width: auto;
+    min-width: 120px;
+}
+
+/**
+ * Email Page - Automate Modal
+**/
+.hoot-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms ease-in;
+}
+
+.hoot-modal.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+.hoot-modal-footer{
+    padding: 15px;
+}
+
+.hoot-modal-header{
+    margin-bottom: 20px;
+}
+
+#hoot-modal-automate{
+    position: absolute;
+    top: auto;
+    bottom: 100%;
+    right: auto;
+    left: 50%;
+    transform: translate( -50%, 0);
+
+    width: 300px;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+#hoot-modal-automate .hoot-modal-content{
+    width: 100%;
+    max-width: 300px;
+    background-color: white;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+#hoot-modal-automate .hoot-modal-content:after{
+    content: ' ';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translate( -50%, 0);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ffffff;
+    clear: both;
+}
+
+#hoot-modal-automate .hoot-modal-header{
+    margin-bottom: 35px;
+}
+
+#hoot-modal-automate .hoot-modal-body{
+    margin-bottom: 20px;
+}
+
+#hoot-modal-automate .hoot-modal-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#hoot-modal-automate .custom-checkbox{
+    margin-bottom: 15px;
+}
+
+#hoot-modal-automate .hoot-modal-automate-time{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 25px;
+}
+
+#hoot-modal-automate .hoot-modal-automate-time > *{
+    margin-right: 10px;
+    height: 28px;
+    border-radius: 4px;
+    border: 1px solid #e9e9e9;
+    background-color: #f7f7f7;
+    text-align: left;
+    width: 60px;
+    padding: 0 0 0 8px;
+    background-size: 8px 8px;
+    background-position: 92% 50%;
+}
+
+#hoot-modal-automate .hoot-modal-automate-time input[type=number]::-webkit-inner-spin-button, 
+#hoot-modal-automate .hoot-modal-automate-time input[type=number]::-webkit-outer-spin-button {  
+   opacity: 1;
+}
+
+.hoot-modal-automate-container{
+    position: relative;
+}   
+
+/**
+ * Email Page - Subject ideas modal
+ */
+[id^="hoot-modal"] .modal-content{
+    padding: 0 10px;
+}
+
+[id^="hoot-modal"] .modal-header{
+    text-align: center;
+    position: relative;
+}
+
+[id^="hoot-modal"] .modal-header .close{
+    position: absolute;
+    margin: 0;
+    left: auto;
+    right: 0;
+    top: 30px;
+}
+
+/**
+ * Email Page - Add contact modal
+ */
+#hoot-modal-add-contacts .modal-content{
+    max-width: 600px;
+}
+
+/* body */
+
+#hoot-modal-add-contacts .__step_1,
+#hoot-modal-add-contacts .__step_2{
+    display: none;
+}
+
+#hoot-modal-add-contacts[data-step="1"] .__step_1,
+#hoot-modal-add-contacts[data-step="2"] .__step_2{
+    display: flex;
+}
+
+#hoot-modal-add-contacts[data-step="1"] .modal-body{
+    margin-bottom: 30px;
+}
+
+#hoot-modal-add-contacts .modal-body .__step_1{
+    flex-direction: column;
+    align-items: center;
+    max-width: 390px;
+    margin: 0 auto;
+}
+
+#hoot-modal-add-contacts .modal-body .__step_1 > *{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Switch 0 */
+#hoot-modal-add-contacts .__switch_option{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hoot-modal-add-contacts[data-switch="0"] .__switch_option_0,
+#hoot-modal-add-contacts[data-switch="1"] .__switch_option_1,
+#hoot-modal-add-contacts[data-switch="2"] .__switch_option_2{
+    display: flex;
+}
+
+#hoot-modal-add-contacts .__switch_option_0 > *{
+    margin-bottom: 20px;
+}
+
+#hoot-modal-add-contacts .__switch_option_0 button{
+    width: 70%;
+    max-width: 100%;
+}
+
+#hoot-modal-add-contacts .modal-body textarea{
+    width: 100%;
+    padding: 20px 15px;
+    min-height: 130px;
+    border-radius: 0.25rem;
+    border-color: #ccc;
+}
+
+/* Switch 1 */
+#hoot-modal-add-contacts .__switch_option_1 ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#hoot-modal-add-contacts .__switch_option_1 li{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+#hoot-modal-add-contacts .__switch_option_1 li:last-child{
+    border-bottom: 0;
+}
+
+#hoot-modal-add-contacts .__switch_option_1 li a{
+    color: #000;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+#hoot-modal-add-contacts .__switch_option_1 .bg-image{
+    height: 23px;
+    width: 23px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-right: 15px;
+}
+
+/* step 2 */
+#hoot-modal-add-contacts[data-step="2"] .modal-body{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#hoot-modal-add-contacts[data-step="2"] .__step_2{
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+#hoot-modal-add-contacts[data-step="2"] .__step_2 > *{
+    margin-bottom: 20px;
+}
+
+#hoot-modal-add-contacts[data-step="2"] .__step_2 .contact-list{
+    margin-top: 0;
+}
+
+#hoot-modal-add-contacts[data-step="2"] .invite-contact__avatar--initials{
+    min-height: 40px;
+    min-width: 40px;
+}
+
+#hoot-modal-add-contacts[data-step="2"] .contact-list-item-td.__email{
+    margin-top: 0;
+    flex-basis: 200px;
+    margin-left: 20px;
+}
+
+#hoot-modal-add-contacts[data-step="2"] .__step_2 .__delete_contact{
+    color: #00676b;
+    text-decoration: none;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+#hoot-modal-add-contacts[data-step="2"][data-addnames="0"] .contact-list-item-controls{
+    display: none;
+}
+
+#hoot-modal-add-contacts .__step_2 .row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+#hoot-modal-add-contacts .__step_2 .row select{
+    padding-left: 6px;
+    background-size: 13px;
+    background-position: 94% 50%;
+}
+
+.custom-checkbox .custom-control-label[for="checkbox-add-contacts-all"]{
+    margin-left: 20px;
+}
+
+#hoot-modal-add-contacts[data-switch="2"] .__add_select_group_compoenent{
+    display: none !important;
+}
+
+/* contacts page */
+body.outreach-contacts #hoot-modal-add-contacts .__switch_option_2,
+body.outreach-contacts #hoot-modal-add-contacts .hoot-component-switch button[data-value="2"]{
+    display: none !important;
+}
+
+body.outreach-contacts #hoot-modal-add-contacts .modal-body .__step_1 > .hoot-component-switch{
+    width: 330px;
+}
+
+/* footer */
+#hoot-modal-add-contacts .modal-footer{
+    display: none;
+}
+
+#hoot-modal-add-contacts[data-step="2"] .modal-footer[data-step="2"]{
+    display: flex;
+    flex-direction: column;
+}
+
+#hoot-modal-add-contacts .modal-footer button.__back{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#hoot-modal-add-contacts .__step_2 .row select {
+    padding-left: 15px;
+    background-size: 13px;
+    background-position: 96% 50%;
+}
+
+/**
+ * Admin Settings
+**/
+.hootmedia-admin-settings{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.hootmedia-admin-settings section{
+    margin-bottom: 20px;
+}
+
+.hootmedia-admin-settings h2{
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.hootmedia-admin-settings .dlb_input{
+    margin-bottom: 20px;
+}
+
+
+/**
+ * Breakpoints
+**/
+@media (min-width: 500px){
+
+    #hoot-modal-add-contacts[data-step="2"] .modal-footer[data-step="2"]{
+        flex-direction: row;
+    }
+    
+    #hoot-modal-add-contacts .modal-footer button.__back{
+        margin-left: auto;
+    }
+    
+    .hoot-button-options-modal{
+        right: -55%;
+    }
+}
+
+@media (min-width: 576px){
+    
+    .hoot-component-datetime-submit .hoot-input-datetime-wrapper{
+        transform: translate(-74%, -11.3%);
+    }
+
+    #hoot-modal-automate .hoot-modal-content:after,
+    .hoot-component-datetime-submit .hoot-input-datetime-wrapper:after{
+        left: 50%;
+        transform: translate( -10%, 0);
+    }
+
+    #hoot-email .hoot-email-footer-buttons .hoot-component-datetime-submit{
+        justify-content: flex-end;
+        margin-bottom: 0;
+    }
+
+    #hoot-email .hoot-email-footer{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #hoot-email .hoot-email-footer-buttons{
+        margin: 0;
+    }
+
+    #hoot-email .hoot-email-footer-frequency{
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    #hoot-email .hoot-email-footer-frequency > div{
+        width: auto;
+        flex: 1;
+    }
+
+    #hoot-email .hoot-email-footer-frequency > div:first-child{
+        padding-right: 15px;
+    }
+
+    #hoot-email .hoot-email-footer-frequency > div:last-child{
+        padding-left: 15px;
+    }
+
+    #hoot-modal-add-contacts .__step_2 .row select {
+        padding-left: 6px;
+        background-size: 13px;
+        background-position: 94% 50%;
+    }
+}
+
+@media (min-width: 610px){
+
+    [id^="hoot-modal"] .modal-content{
+        padding: 0 40px;
+    }
+
+    .hoot-editor-footer{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .modal .hoot-component-switch > div {
+        flex-direction: row;
+    }
+
+    #hoot-modal-add-contacts .contact-list-item-td.__email {
+        flex-basis: 200px;
+        flex-grow: 1;
+    }
+}
+
+@media (min-width: 1200px){
+
+    #hoot-email .hoot-input-email-group{
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    #hoot-email .hoot-input-email-group .form-control-with-button{
+        width: auto;
+    }
+    
+    #hoot-email .hoot-input-email-group a{
+        margin-top: 0;
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 1600px){
+
+    #hoot-email .hoot-email-footer-buttons .hoot-component-datetime-submit{
+        margin-right: 25px;
+    }
+
+}
+
+@media( max-width: 1800px ){
+    .hoot-email-contacts-subject-wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-items: flex-start;
+    }
+
+    .hoot-email-contacts-subject-wrapper .form-group{
+        width: 100%;
+    }
+
+    .hoot-email-contacts-subject-wrapper .form-group-2{
+        flex-basis: auto;
+        margin-left: 0;
+        order: 3;
+    }
+
+    .hoot-email-contacts-subject-wrapper .form-group-1{
+        order: 1;
+    }
+
+    #hoot-email .hoot-email-contacts-subject-wrapper .hoot-emails-selected{
+        order: 2;
+    }
+}
+
+@media (max-width: 1800px){
+    
+    .hoot-email-contacts-subject-wrapper .form-group-2{
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media (max-width: 768px){
+    #hoot-modal-add-contacts .modal-footer .custom-control{
+        padding-left: 10px;
+    }
+
+    #hoot-email .hoot-emails-selected{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+@media (max-width: 680px){
+    #hoot-modal-add-contacts .contact-list-item-td.__edit{
+        width: 100%;
+        flex-basis: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 15px;
+    }
+}

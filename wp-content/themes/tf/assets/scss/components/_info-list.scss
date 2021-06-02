@@ -1,0 +1,38 @@
+// ===================================
+// assets/scss/components/_info-list.scss
+// ==================================
+
+/* Component: info-list */
+.info-list {
+
+  // El: title
+  &__title {
+    @include margin( 10px, 'top' );
+    color: #545454;
+    @include margin( 17px, 'top' );
+    font-size: $font-size-xxs;
+    line-height: 1.9285;
+    font-weight: normal;
+
+    &:first-child {
+      margin-top: 0px;
+    }
+  }
+
+  // El: text
+  &__text {
+    @include margin( 2px, 'top' );
+    font-size: $font-size-xs;
+    line-height: 1.25;
+    font-weight: bold;
+    color: $body-color;
+
+    a[href^=tel] {
+      color: inherit;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+// ====================================
+// assets/dass/components/_animations.scss
+// ====================================
+
+/* Component: Animations */
+.animated-slow {
+  animation-duration: 0.35s;
+  animation-fill-mode: both;
+  transition-delay: 0.35s;
+  animation-duration: 0.35s;
+}
+
+.animated-fast {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+  transition-delay: 0.25s;
+  animation-duration: 0.25s;
+}
+
+.animated-x-fast {
+  animation-duration: 0.15s;
+  animation-fill-mode: both;
+  transition-delay: 0.15s;
+  animation-duration: 0.15s;
+}

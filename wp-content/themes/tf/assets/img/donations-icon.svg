@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45.636" height="45.636" viewBox="0 0 45.636 45.636">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Clip_2" data-name="Clip 2" d="M0,0H45.636V45.636H0Z" transform="translate(0 0.364)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_8" data-name="Group 8" transform="translate(0 -1)">
+    <g id="Group_3" data-name="Group 3" transform="translate(0 0.636)">
+      <path id="Clip_2-2" data-name="Clip 2" d="M0,0H45.636V45.636H0Z" transform="translate(0 0.364)" fill="none"/>
+      <g id="Group_3-2" data-name="Group 3" clip-path="url(#clip-path)">
+        <path id="Fill_1" data-name="Fill 1" d="M45.636,22.818A22.818,22.818,0,1,1,22.818,0,22.817,22.817,0,0,1,45.636,22.818" transform="translate(0 0.364)" fill="#c6e4e4"/>
+      </g>
+    </g>
+    <path id="Stroke_4" data-name="Stroke 4" d="M20.991,14.717a16.79,16.79,0,0,0,3.273-3.631,6.76,6.76,0,0,0,.516-6.865A7.053,7.053,0,0,0,13.943,1.562c-.426.346-.809.744-1.24,1.144l-.222-.249A6.935,6.935,0,0,0,2.427,1.892,6.911,6.911,0,0,0,.146,8.622a8.621,8.621,0,0,0,2.2,4.015A39.159,39.159,0,0,0,7.17,17.028a45.93,45.93,0,0,1,4.985,4.407.772.772,0,0,0,1.213-.048l1.78-1.671" transform="translate(10.147 13.546)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="Fill_6" data-name="Fill 6" d="M14.416,2.456A4.1,4.1,0,0,0,8.112.909c-.248.2-.471.433-.721.665l-.13-.145A4.034,4.034,0,0,0,1.412,1.1,4.019,4.019,0,0,0,.085,5.016,5.014,5.014,0,0,0,1.368,7.352a22.762,22.762,0,0,0,2.8,2.554,26.849,26.849,0,0,1,2.9,2.564.449.449,0,0,0,.706-.028l1.035-.972,3.4-2.908a9.766,9.766,0,0,0,1.9-2.112,3.933,3.933,0,0,0,.3-3.994" transform="translate(15.475 18.085)" fill="#fff"/>
+  </g>
+</svg>

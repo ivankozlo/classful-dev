@@ -1,0 +1,138 @@
+// =================================================
+// assets/scss/_variables.scss
+//
+// Table of Contents:
+//
+//  1. Colors
+//  2. Font Family
+//  3. Font Size
+//  4. Line Height
+//  5. Fonts Weight
+//  6. Media Query Sizes
+//  7. Container Size
+//  8. Paths
+//  9. Border Radius
+// 10. Transitions
+// 11. Icons
+//
+// Variables for Elements
+//
+//  1. Navbar
+//  2. Logo
+//  3. Forms
+//
+// =================================================
+
+$prefix: '';
+
+// 1. Colors
+// =================================
+
+$black      : #000000;
+$white      : #ffffff;
+
+$color__primary         : $primary;
+$color__primary-hover   : darken( $color__primary, 8% );
+$color__secondary       : $secondary;
+$color__secondary-hover : darken( $color__secondary, 8% );
+
+$color__dark            : #000;
+$color__light           : #CED4DA;
+$color__lighter         : #f1f6fa;
+
+$color__success         : $success;
+$color__success-hover   : darken( $color__success, 8% );
+$color__danger          : $danger;
+$color__danger-hover    : darken( $color__danger, 8% );
+
+// Colors: Text
+$color__text--light : $color__light;
+$color__text--base  : #000;
+$color__text--dark  : $color__dark;
+
+// Colors: Line Border
+$color__border--line : #e8e8e8;
+
+// 3. Font Size
+// =================================
+
+// Font Size: Base
+$font__size--root    : 16px;
+$font__size--base    : $font-size-base;
+$font__size--small   : round( $font__size--base * 0.875 );
+$font__size--large   : round( $font__size--base * 1.25 );
+$font__size--x-large : round( $font__size--base * 1.6 );
+
+// 6. Media Query Sizes
+// =================================
+
+$breakpoint__extra-large : map-get( $grid-breakpoints, xl );
+$breakpoint__large       : map-get( $grid-breakpoints, lg );
+$breakpoint__medium      : map-get( $grid-breakpoints, md );
+$breakpoint__small       : map-get( $grid-breakpoints, sm );
+$breakpoint__extra-small : map-get( $grid-breakpoints, xs );
+
+// 7. Container Size
+// =================================
+
+$container__width     : 1270px;
+$container__width--lg : 1400px;
+$container__width--md : 1142px;
+$container__width--sm : 746px;
+$container__gutter    : 20px;
+
+// 8. Paths
+// =================================
+
+$path--image : '../images';
+$path--font  : '../fonts';
+
+// 9. Margin
+// =================================
+
+$margin--base : 29px;
+
+// 9. Border Radius
+// =================================
+
+$border-radius--base  : 4px;
+$border-radius--small : 1px;
+$border-radius--large : 5px;
+
+// 10. Transitions
+// =================================
+
+$transition--extend : all ease-in-out;
+
+$transition--base   : 0.25s $transition--extend;
+$transition--fast   : 0.15s $transition--extend;
+$transition--slow   : 0.35s $transition--extend;
+$border-radius--large : 5px;
+
+// 11. Z-Indexes
+// =================================
+
+$index--base: 1;
+
+// 11. Icons
+// =================================
+
+$icons : (
+  facebook              : ( 'size': 8px 15px, 'position': 0px -64px ),
+  twitter               : ( 'size': 18px 16px, 'position': -23px -64px ),
+  linkedin              : ( 'size': 15px, 'position': -56px -64px ),
+);
+
+$icons-retina-position : (
+  facebook              : ( 'position': 0px -59px ),
+  twitter               : ( 'position': -23px -58px ),
+  linkedin              : ( 'position': -56px -59px ),
+);
+
+// =================================
+// Variables for Elements
+// =================================
+
+// Side Nav Width
+$sidenav-width: 300px;
+$sidenav-transition-delay: 0.35s;

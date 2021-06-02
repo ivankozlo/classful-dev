@@ -1,0 +1,52 @@
+// ===================================
+// assets/scss/components/_donations-timeline.scss
+// ==================================
+
+/* Component: donations-timeline */
+.donations-timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  // El: item
+  &__item {
+    font-size: $font-size-xxs;
+    display: inline-block;
+    vertical-align: middle;
+
+    &:before {
+      content: '|';
+      color: $border-color;
+      @include font-size( 22px );
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &:first-child {
+
+      &:before {
+        display: none;
+      }
+
+      > a {
+        padding-left: 0;
+      }
+    }
+  }
+
+  // El: link
+  &__link {
+    @include padding( 8px, 'left' );
+    @include padding( 8px, 'right' );
+    color: $body-color;
+
+    &.active {
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  // El: active
+  &__active {
+
+  }
+}

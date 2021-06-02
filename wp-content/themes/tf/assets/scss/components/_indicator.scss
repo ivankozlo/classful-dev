@@ -1,0 +1,41 @@
+// ====================================
+// assets/scss/components/_indicator.scss
+// ====================================
+
+/* Component: Indicator */
+.indicator {
+  display: inline-block;
+  vertical-align: middle;
+  @include size-rem( 29px );
+  background-color: $gray-300;
+  border-radius: 2em;
+  line-height: calc-rem( 29px );
+  text-align: center;
+  position: relative;
+
+  img, svg, i {
+    @include position( $top: 50%, $left: 50% );
+    transform: translate(-50%, -50%);
+  }
+
+  // Mod: Success
+  &--success {
+    background-color: $primary;
+  }
+
+  // Mod: Error
+  &--error {
+    background-color: $danger-light;
+  }
+
+  // Mod: Progress
+  &--progress {
+    background-color: $lighter-blue;
+    color: $light-blue;
+  }
+
+  // Mod: Review
+  &--review {
+    background-color: $warning-light;
+  }
+}

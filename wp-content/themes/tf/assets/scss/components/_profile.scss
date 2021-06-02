@@ -1,0 +1,140 @@
+// ===================================
+// assets/scss/components/_profile.scss
+// ==================================
+
+/* Component: Profile */
+.profile {
+  @include padding( 162px, 'bottom' );
+
+  // El: cover
+  &__cover {
+
+  }
+
+  // El: content-area
+  &__content-area {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    @include bp-large {
+      flex-direction: column;
+    }
+  }
+
+  // El: content
+  &__content {
+    @include padding( 20px, 'top' );
+
+    // Responsive: > Medium
+    @include bp-medium-min {
+      @include padding( 87px, 'top' );
+    }
+
+    // Responsive: > Large
+    @include bp-large-min {
+      flex-basis: per-calc( 780px, 1200px );
+      width: per-calc( 780px, 1200px );
+    }
+  }
+
+  // El: sidebar
+  &__sidebar {
+    @include padding( 50px, 'bottom' );
+    flex-basis: per-calc( 355px, 1200px );
+    width: per-calc( 355px, 1200px );
+  }
+
+  // El: alert
+  &__alert {
+
+  }
+
+  // El: text-wrap
+  &__text-wrap {
+
+  }
+
+  // El: title
+  &__title {
+    line-height: 1.4761;
+    @include margin( 28px, 'bottom' );
+  }
+
+  // El: summary
+  &__summary {
+    @include margin( 50px, 'bottom' );
+
+    p {
+      font-size: $font-size-sm;
+    }
+  }
+
+  // El: quote
+  &__quote {
+    max-width: 559px;
+    @include margin( 60px, 'bottom' );
+  }
+
+  // El: schools
+  &__schools {
+    @include margin( 60px, 'bottom' );
+  }
+
+  // El: line
+  &__line {
+    @include margin( 60px, 'top' );
+    @include margin( 57px, 'bottom' );
+  }
+
+  // El: text
+  &__text {
+    @extend %last-child-no-margin;
+
+    p {
+      line-height: 1.4;
+    }
+  }
+
+  // El: heading
+  &__heading {
+    @include margin( 24px, 'bottom' );
+  }
+
+  // El: gallery
+  &__gallery {
+
+  }
+
+  // El: donations
+  &__donations {
+
+  }
+
+  // El: donation-box
+  &__donation-box {
+    @include margin( -201px, 'top' );
+    z-index: 10;
+    position: relative;
+  }
+
+  // El: map
+  &__map {
+    @include margin( 80px, 'top' );
+  }
+
+  // Responsive: < Medium
+  @include bp-medium {
+
+    &__title,
+    &__summary {
+      text-align: center;
+    }
+  }
+
+  // Mod: Teacher
+  &--teacher {
+
+  }
+}

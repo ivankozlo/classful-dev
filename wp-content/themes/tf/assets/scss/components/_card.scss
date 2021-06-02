@@ -1,0 +1,15 @@
+// ===================================
+// assets/scss/components/_card.scss
+// ===================================
+//
+// Section component styling goes here.
+// ==================================
+
+.card {
+  border-radius: 0;
+  border: none;
+
+  .card-body {
+    @include padding( 24px 33px );
+  }
+}

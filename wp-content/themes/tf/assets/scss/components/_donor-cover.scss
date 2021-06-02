@@ -1,0 +1,138 @@
+// ===================================
+// assets/scss/components/_donor-cover.scss
+// ==================================
+
+/* Component: donor-cover */
+.donor-cover {
+  position: relative;
+
+  // El: bg
+  &__bg {
+    @include position( $top: 0, $left: 0, $width: 100%, $height: 340px );
+    background-color: $secondary;
+    border-radius: $border-radius-section;
+    overflow: hidden;
+
+    &:before {
+      content: '';
+      @include position( $top: 0, $left: 0, $width: 100%, $height: 100% );
+      @include bg-img-full( 'swiggles.svg', $size: 100% auto, $repeat: repeat );
+    }
+  }
+
+  // El: bg-img
+  &__bg-img {
+    @include position( $top: 0, $left: 0, $width: 100%, $height: 100% );
+    @include background( $repeat: no-repeat, $position: center center, $size: cover );
+
+    &:before {
+      content: '';
+      @include position( $bottom: 0, $left: 0, $width: 100%, $height: 80% );
+      background-image: linear-gradient(180deg, rgba(#000, 0) 0%, rgba(#000, 0.60) 99%);
+    }
+  }
+
+  // El: inner
+  &__inner {
+    display: flex;
+    align-items: flex-end;
+    @include padding( 150px 0 71px );
+  }
+
+  // Container
+  .container-fluid {
+    position: relative;
+    z-index: 1;
+  }
+
+  // El: wrap
+  &__wrap {
+
+  }
+
+  // El: image
+  &__image {
+    width: 241px;
+    border: 8px solid $white;
+    background-color: $white;
+    border-radius: $border-radius-xl;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    position: relative;
+    @include margin( 30px, 'bottom' );
+  }
+
+  // El: img-label
+  &__img-label {
+    left: 50%;
+    bottom: -15px;
+    transform: translateX( -50% );
+    @include padding( 14px, 'right' );
+  }
+
+  // El: image-cont
+  &__image-cont {
+    height: 0;
+    padding-bottom: aspect-ratio( 225px 250px );
+    border-radius: $border-radius;
+    display: block;
+  }
+
+  // El: info
+  &__info {
+    @include margin( 18px, 'top' );
+    @include center-with-width( 715px );
+  }
+
+  // El: name-cont
+  &__name-cont {
+
+  }
+
+  // El: name
+  &__name {
+  }
+
+  // El: address
+  &__address {
+
+  }
+
+  // El: buttons
+  &__buttons {
+    @include margin( 31px, 'bottom' );
+
+    .btn {
+      min-width: 144px;
+      font-size: $font-size-xs;
+      text-transform: none;
+      border-width: 2px;
+    }
+
+    .btn-outline-primary {
+      color: $body-color;
+      border-color: #E7E6E6;
+
+      @include bs-button-hover {
+        color: $white;
+        border-color: $primary;
+      }
+
+      &:focus {
+        color: $white;
+        border-color: $primary;
+        background-color: $primary;
+      }
+    }
+  }
+
+  // El: summary
+  &__summary {
+    @include margin( 51px, 'bottom' );
+
+    p {
+      font-size: $font-size-sm;
+    }
+  }
+}

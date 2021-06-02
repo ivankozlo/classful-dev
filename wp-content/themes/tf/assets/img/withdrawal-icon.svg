@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45.636" height="45.636" viewBox="0 0 45.636 45.636">
+  <g id="Group_9" data-name="Group 9" transform="translate(0 -1)">
+    <g id="Group_3" data-name="Group 3" transform="translate(0 0.636)">
+      <path id="Fill_1" data-name="Fill 1" d="M45.636,22.818A22.818,22.818,0,1,1,22.818,0,22.818,22.818,0,0,1,45.636,22.818" transform="translate(0 0.364)" fill="#fccbc7"/>
+    </g>
+    <path id="Fill_4" data-name="Fill 4" d="M0,19.907H11.721V0H0Z" transform="translate(18.014 15.193)" fill="#fff"/>
+    <path id="Stroke_6" data-name="Stroke 6" d="M0,19.907H11.721V0H0Z" transform="translate(14.258 11.217)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="Stroke_7" data-name="Stroke 7" d="M5.349,2.674A2.675,2.675,0,1,1,2.675,0,2.675,2.675,0,0,1,5.349,2.674Z" transform="translate(17.444 18.496)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="Stroke_8" data-name="Stroke 8" d="M0,19.907H11.721V0H7.965" transform="translate(18.014 15.193)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>

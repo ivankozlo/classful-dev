@@ -1,0 +1,43 @@
+// ====================================
+// assets/scss/components/_m04.scss
+// ====================================
+
+/* Component: M04 */
+.m04 {
+  @include padding( 203px, 'top' );
+  @include padding( 198px, 'bottom' );
+
+  // Responsive: > Medium
+  @include bp-large-min {
+    .container-fluid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    // El: header
+    &__header {
+      flex-basis: per-calc( 455px );
+      margin-left: per-calc( 65px );
+      padding-right: per-calc( 50px );
+    }
+
+    // El: cards
+    &__cards {
+      flex-basis: per-calc( 750px )
+    }
+  }
+
+  // El: sub-heading
+  &__sub-heading {
+    @include font-size( 24px );
+    line-height: 1.333333333;
+    @include margin( 12px, 'bottom' );
+  }
+
+  // El: heading
+  &__heading {
+    @include font-size( 42px );
+    line-height: 1.071428571;
+  }
+}

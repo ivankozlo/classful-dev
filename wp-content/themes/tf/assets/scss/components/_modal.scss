@@ -1,0 +1,49 @@
+// ===================================
+// assets/scss/components/_modal.scss
+// ==================================
+
+// modal
+.modal {
+
+  .modal-dialog {
+    max-width: 1010px;
+    width: 100%;
+  }
+
+  // Modal Header
+  .modal-header {
+    text-align: center;
+    justify-content: center;
+    @include padding( 26px 35px 15px );
+    border: none;
+    position: relative;
+    min-height: 71px;
+  }
+
+  .modal-title {
+    font-size: $h4-font-size;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .close {
+    @include position( $top: 30px, $left: 35px );
+    opacity: 1;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  // Modal body
+  .modal-body {
+    @include padding( 15px 35px 50px );
+  }
+
+  // Modal body
+  .modal-footer {
+    @include padding( 20px 35px );
+  }
+}
+
+.updates-modal {
+
+}

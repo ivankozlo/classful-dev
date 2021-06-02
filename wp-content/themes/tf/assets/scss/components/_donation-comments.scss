@@ -1,0 +1,91 @@
+// ===================================
+// assets/scss/components/_donation-comments.scss
+// ==================================
+
+/* Component: donation-comments */
+.donation-comments {
+
+  .donation-comment {
+    @include margin( 20px, 'top' );
+
+    &:first-child {
+      margin-top: 0px;
+    }
+  }
+}
+
+.donation-comment {
+
+  // El: content
+  &__content {
+    @include margin( 21px, 'bottom' );
+    @extend %last-child-no-margin;
+
+    p {
+      font-size: $font-size-sm;
+      line-height: 1.3333;
+    }
+  }
+
+  // El: author-box
+  &__author-box {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  // El: info
+  &__info {
+    @include margin( 12px, 'left' );
+  }
+
+  // El: author-photo
+  &__author-photo {
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: $border-radius;
+  }
+
+  // El: author-info
+  &__author-info {
+
+  }
+
+  // El: author-name
+  &__author-name {
+    font-size: $font-size-xxs;
+    line-height: 1.4285;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+
+  // El: date
+  &__date {
+    font-size: $font-size-xxs;
+    line-height: 1.4285;
+    margin-bottom: 0;
+  }
+
+  // Mod: reply
+  &--reply {
+    background: $white;
+    @include padding( 10px 18px 16px );
+    border-radius: $border-radius-lg;
+
+    .donation-comment {
+
+      &__author-photo {
+        @include margin( 6px, 'top' );
+      }
+
+      &__content {
+        @include margin( 2px, 'bottom' );
+
+        p {
+          font-size: $font-size-xs;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}

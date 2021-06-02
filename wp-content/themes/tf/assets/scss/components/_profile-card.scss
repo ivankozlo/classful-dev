@@ -1,0 +1,52 @@
+// ===================================
+// assets/scss/components/_profile-card.scss
+// ===================================
+
+.profile-card {
+
+  // El: inner
+  &__inner {
+    display: flex;
+    flex-wrap: nowrap
+  }
+
+  // El: image
+  &__image {
+    width: 80px;
+    height: 90px;
+    border-radius: $border-radius;
+  }
+
+  // El: info
+  &__info {
+    @include margin( 20px, 'left' );
+  }
+
+  // El: name
+  &__name {
+    font-size: $font-size-md;
+    @include margin( 9px, 'bottom' );
+  }
+
+  // El: address
+  &__address {
+    @include margin( 5px, 'bottom' );
+  }
+
+  // El: meta
+  &__meta {
+    line-height: 1.6875;
+
+    a {
+      color: $secondary;
+
+      &:hover {
+        color: $secondary-hover;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}

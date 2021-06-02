@@ -1,0 +1,24 @@
+// ===================================
+// assets/scss/components/_tags.scss
+// ===================================
+
+.tags {
+
+  // El: Item
+  &__item, a {
+    display: inline-block;
+    vertical-align: middle;
+    @include margin( 5px, 'right' );
+    color: $dark;
+    background-color: $gray;
+    @include padding( 7px 15px );
+    @extend %transition-fast;
+    border-radius: $border-radius;
+    line-height: 1;
+
+    &:hover, &:active {
+      background-color: $gray-200;
+      text-decoration: none;
+    }
+  }
+}

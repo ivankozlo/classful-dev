@@ -1,0 +1,90 @@
+// ====================================
+// assets/scss/components/_steps.scss
+// ====================================
+
+/* Component: steps */
+.teacher-cards {
+
+  &.row {
+    @include row-gutter( 30px );
+  }
+}
+
+.teacher-card {
+
+  // El: inner
+  &__inner {
+    position: relative;
+  }
+
+  // El: label
+  &__label {
+    @include position( $top: -18px, $right: -15px, $width: 90px, $index: 10 );
+    background: $secondary;
+    color: $white;
+    text-align: center;
+    @include padding( 6px 10px 8px );
+    border-radius: $border-radius;
+
+    &-amount, &-time {
+      display: block;
+    }
+
+    &-amount {
+      line-height: 1.1111;
+    }
+
+    &-time {
+      @include font-size( 12px );
+      line-height: 1.1666;
+    }
+  }
+
+  // El: image-cont
+  &__image-cont {
+    position: relative;
+  }
+
+  // El: image
+  &__image {
+    @extend %transition-fast;
+    display: block;
+    padding-bottom: aspect-ratio( 165px 220px );
+    border-radius: $border-radius;
+
+    &:hover {
+      @include opacity( 0.9 );
+    }
+  }
+
+  // El: goal
+  &__goal {
+    @include position( $bottom: 9px, $left: 15px, $right: 15px );
+  }
+
+  // El: info
+  &__info {
+    @include padding( 8px, 'top' );
+  }
+
+  // El: name
+  &__name {
+    @include margin( 8px, 'bottom' );
+    line-height: 1.25;
+
+    a {
+      color: inherit;
+
+      &:hover {
+        color: $primary;
+        text-decoration: none;
+      }
+    }
+  }
+
+  // El: text
+  &__text {
+    margin-bottom: 0;
+    line-height: 1.4285;
+  }
+}

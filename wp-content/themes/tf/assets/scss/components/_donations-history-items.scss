@@ -1,0 +1,43 @@
+// ===================================
+// assets/scss/components/_donations-history-items.scss
+// ==================================
+
+/* Component: donations-history-items */
+.donations-history-items {
+
+  .donations-history-item {
+    @include margin( 11px, 'top' );
+
+    &:first-child {
+      margin-top: 0px;
+    }
+  }
+}
+
+// Item
+.donations-history-item {
+
+  // El: inner
+  &__inner {
+    @include padding( 14px 30px 19px 20px );
+    background-color: $gray;
+    border-radius: $border-radius-lg;
+  }
+
+  // El: left
+  &__left {
+
+  }
+
+  // El: right
+  &__right {
+    text-align: right;
+  }
+
+  // El: image
+  &__image {
+    width: 30px;
+    height: 30px;
+    margin-right: 11px;
+  }
+}

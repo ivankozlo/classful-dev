@@ -1,0 +1,40 @@
+// ===================================
+// assets/scss/components/_portal-account-nav.scss
+// ==================================
+
+/* Component: portal-account-nav */
+.portal-account-nav {
+
+  .nav-item {
+    margin-left: 22px;
+
+    &:first-child {
+      margin-left: 0px;
+    }
+  }
+
+  .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: $font-size-xs;
+    color: $text-color-light;
+    @extend %transition-fast;
+
+    span {
+      padding-bottom: 4px;
+    }
+
+    &:hover {
+      color: $body-color;
+    }
+  }
+
+  .active .nav-link {
+    font-weight: bold;
+    color: $body-color;
+
+    span {
+      border-bottom: 3px solid $secondary;
+    }
+  }
+}

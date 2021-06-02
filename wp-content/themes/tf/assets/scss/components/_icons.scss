@@ -1,0 +1,26 @@
+// =================================================
+// assets/scss/components/_icons.scss
+// =================================================
+
+/* Component: Icons */
+// .icon {
+//   @include background( $position: left top, $repeat: no-repeat );
+//   @include retina-image('#{$path--image}/icons', 600px 600px, $retina-suffix: '@2x');
+//   display: inline-block;
+//   vertical-align: middle;
+
+//   @each $icon, $icon-data in $icons {
+//     &--#{$icon} {
+//       @include size-rem( map-get( $icon-data, 'size' ) );
+//       background-position: map-get( $icon-data, 'position' );
+//     }
+//   }
+
+//   @include hidpi( 1.5 ) {
+//     @each $icon, $icon-data in $icons-retina-position {
+//       &--#{$icon} {
+//         background-position: map-get( $icon-data, 'position' );
+//       }
+//     }
+//   }
+// }

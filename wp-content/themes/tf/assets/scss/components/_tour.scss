@@ -1,0 +1,188 @@
+// ===================================
+// assets/scss/components/_tour.scss
+// ===================================
+
+.tour {
+
+  // Sel: Tip
+  &__tip {
+    @include position( $top: 0, $left: 0, $index: 100000 );
+    max-width: 195px;
+    min-height: 17px;
+    min-width: 17px;
+
+    // Sel: Trigger
+    &-trigger {
+      @include position( $top: 0, $left: 0, $index: 10 );
+      @extend %transition-base;
+      animation-name: dropPulse;
+      animation-duration: 2s;
+      animation-fill-mode: both;
+      animation-iteration-count: infinite;
+    }
+
+    &-pulse {
+      @include position( $top: 0, $left: 0, $index: 10 );
+      @extend %transition-base;
+      display: block;
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      background: $primary;
+      cursor: pointer;
+      box-shadow: 0 0 0 rgba( $primary, 0.4 );
+      animation: circlePulse 2s infinite;
+      position: relative;
+      z-index: 100;
+
+      svg {
+        display: none;
+      }
+    }
+
+    // Sel: Content Wrap
+    &-content-wrap {
+      background-color: $primary;
+      @include padding( 19px 24px );
+      @include all-colors( #fff );
+      @include position( $top: 0, $left: 0 );
+      border-radius: 15px;
+      border-top-left-radius: 7px;
+      opacity: 0;
+      @extend %transition-base;
+      width: 195px;
+      // height: 0;
+      // overflow: hidden;
+      // padding: 0;
+      opacity: 0;
+      pointer-events: none;
+      // transition: padding 0.25s ease-in-out, height 0.25s ease-in-out, width 0.25s ease-in-out;
+    }
+
+    // Sel: Title
+    &-title {
+      @include font-size( 14px );
+      line-height: 1.42858;
+      font-weight: $font-weight-semi-bold;
+      @include margin( 5px, 'bottom' );
+      opacity: 0;
+    }
+
+    // Sel: Content
+    &-content {
+      opacity: 0;
+    }
+
+    // Sel: Close
+    &-close {
+      @include position( $top: 17px, $right: 13px, $width: 21px );
+      text-align: center;
+      @extend %transition-base;
+      opacity: 0;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    // Mod: Position
+    &--pos {
+
+      &-top-center {
+        @include margin( -23px, 'top' );
+
+        .tour__tip-content-wrap {
+          // transform: translateX( -50% ) ;
+          left: -50%;
+          @include margin( -80px, 'left' );
+          // @include margin( -8px, 'right' );
+          // min-width: 245px;
+        }
+      }
+
+      &-top-center {
+        @include margin( -23px, 'left' );
+      }
+
+      &-bottom-center {
+        // @include margin( -23px, 'left' );
+        .tour__tip-content-wrap {
+          // transform: translateX( -50% ) ;
+          left: -50%;
+          @include margin( -80px, 'left' );
+          // @include margin( -8px, 'right' );
+          // min-width: 245px;
+        }
+      }
+    }
+
+    // Mod: Showing
+    &--showing12312,
+    &:hover {
+
+      .tour__tip-close {
+        opacity: 0.571205357;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .tour__tip-trigger,
+      .tour__tip-pulse {
+        opacity: 0;
+      }
+
+      .tour__tip-content-wrap {
+        opacity: 1;
+        @include padding( 19px 24px );
+        // width: 195px;
+        height: auto;
+        // @extend %transition-base;
+        z-index: 11;
+        border-top-left-radius: 15px;
+        pointer-events: all;
+      }
+
+      // Sel: Title
+      .tour__tip-title {
+        opacity: 1;
+        @extend %transition-base;
+      }
+
+      // Sel: Content
+      .tour__tip-content {
+        opacity: 0.5;
+        @extend %transition-base;
+      }
+    }
+  }
+}
+
+@keyframes dropPulse {
+  0% {
+    transform: scaleX( 1 )
+  }
+
+  50% {
+    transform: scale3d( 1.1, 1.1, 1.1 )
+  }
+
+  to {
+    transform: scaleX( 1 )
+  }
+}
+
+@keyframes circlePulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba( $primary, 0.4 );
+  }
+
+  70% {
+    box-shadow: 0 0 0 8px rgba( $primary, 0 );
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba( $primary, 0 );
+  }
+}

@@ -1,0 +1,43 @@
+// ===================================
+// assets/scss/components/_.portal-box.scss
+// ==================================
+
+/* Component: .portal-box */
+.portal-box {
+  border: 1px solid $border-color;
+  border-radius: $border-radius-section;
+  @include padding( 30px );
+  min-height: 100%;
+
+  // El: inner
+  &__inner {
+
+  }
+
+  // El: header
+  &__header {
+
+    // Mod: small
+    &--small {
+      @include center-with-width( 295px );
+    }
+  }
+
+  // El: title
+  &__title {
+
+  }
+
+  // El: text
+  &__text {
+
+  }
+
+  // Mod: 400
+  &--400 {
+
+    .portal-box__inner {
+      @include center-with-width( 400px );
+    }
+  }
+}

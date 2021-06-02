@@ -1,0 +1,49 @@
+// ====================================
+// assets/scss/components/_gutenberg-blocks.scss
+// ====================================
+
+/* Gutenberg Blocks */
+
+// WP BLock Embed
+.wp-block-embed {
+
+}
+
+.alignfull {
+  width: 100vw;
+  @include margin( 72px, 'top' );
+  @include margin( 72px, 'bottom' );
+  margin-left: 50%;
+  transform: translateX( -50% );
+}
+
+.alignwide {
+  max-width: 820px;
+  margin-left: -133px;
+  margin-right: -133px;
+}
+
+// Block Image
+.wp-block-image {
+  @include margin( 25px, 'top' );
+  @include margin( 25px, 'bottom' );
+
+  figcaption {
+    color: $color__grey-light;
+    @include font-size( 14px );
+    margin: 0;
+    margin-top: 0.928571em;
+  }
+}
+
+// Quote
+.wp-block-quote {
+  background-color: $secondary;
+  margin-left: -133px;
+  margin-right: -133px;
+  @include padding( 60px 133px );
+
+  p {
+    margin-bottom: 0px;
+  }
+}

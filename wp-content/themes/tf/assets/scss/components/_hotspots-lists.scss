@@ -1,0 +1,56 @@
+// ====================================
+// assets/scss/components/_hotspots-lists.scss
+// ====================================
+
+/* Component: Hotspots List */
+.hotspots-lists {
+  @include padding( 57px 0px );
+  @extend %clearfix;
+
+  // El: Item
+  &__item {
+    width: 33.33%;
+    float: left;
+
+    &:nth-child(3n+4) {
+      clear: both;
+    }
+  }
+}
+
+.hotspots-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: flex;
+    align-items: center;
+    @include margin( 23px, 'top' );
+
+    &:first-child {
+      margin-top: 0px;
+    }
+  }
+
+  // El: Num
+  &__num {
+    flex-basis: 44px;
+    flex-shrink: 0;
+  }
+
+  // El: Text
+  &__text {
+    @include padding( 21px, 'left' );
+    flex-grow: 1;
+  }
+}
+
+.hotspots-map, .teacherfunder-map {
+  width: 100%;
+  height: 460px;
+
+  img {
+    max-width: inherit !important;
+  }
+}

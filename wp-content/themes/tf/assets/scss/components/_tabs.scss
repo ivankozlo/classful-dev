@@ -1,0 +1,25 @@
+// ====================================
+// assets/scss/components/_tabs.scss
+// ====================================
+
+/* Component: tabs */
+.nav-tabs {
+  border: none;
+  @include margin( 17px, 'bottom' );
+
+  .nav-item {
+    font-size: $font-size-md;
+    font-weight: $font-weight-bold;
+    line-height: normal;
+  }
+
+  .nav-link {
+    @include padding( 10px 10px );
+    color: #CECECE;
+    border: none;
+
+    &.active {
+      color: $body-color;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+// ===================================
+// assets/scss/components/_.portal-header.scss
+// ==================================
+
+/* Component: .portal-header */
+.portal-header {
+  @include margin( 30px, 'bottom' );
+
+  // El: inner
+  &__inner {
+    @include padding( 37px 58px 49px );
+  }
+
+  // El: text-wrap
+  &__text-wrap {
+    max-width: 460px;
+  }
+
+  // El: heading
+  &__heading {
+    line-height: 1.25;
+    @include margin( 14px, 'bottom' );
+  }
+
+  // El: text
+  &__text {
+    line-height: 1.25;
+  }
+}

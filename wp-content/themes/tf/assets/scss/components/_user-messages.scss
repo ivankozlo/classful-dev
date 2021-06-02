@@ -1,0 +1,79 @@
+// ===================================
+// assets/scss/components/_user-messages.scss
+// ==================================
+
+/* Component: user-messages */
+.user-messages {
+  border: 1px solid $border-color;
+  border-radius: $border-radius-xl;
+
+  .user-message {
+
+    &:first-child {
+      border-top-left-radius: $border-radius-xl;
+      border-top-right-radius: $border-radius-xl;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: $border-radius-xl;
+      border-bottom-right-radius: $border-radius-xl;
+    }
+  }
+}
+
+.user-message {
+  border-top: 1px solid $border-color;
+
+  &:first-child {
+    border: none;
+  }
+
+  a {
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  // El: inner
+  &__inner {
+    @include padding( 16px 24px 21px );
+    display: flex;
+    align-items: flex-start;
+  }
+
+  // El: header
+  &__header {
+    width: 268px;
+    flex-basis: 268px;
+    flex-shrink: 0;
+    padding-right: 25px;
+  }
+
+  // El: avatar
+  &__avatar {
+    width: 44px;
+    height: 44px;
+    margin-right: 15px;
+  }
+
+  // El: content
+  &__content {
+    position: relative;
+    width: per-calc( 690px, 1330px );
+    flex-basis: per-calc( 690px, 1330px );
+  }
+
+  // El: unread-icon
+  &__unread-icon {
+    @include position( $top: 3px, $left: -17px );
+    border-radius: 50em;
+    @include font-size( 10px );
+    color: #FF7466;
+  }
+
+  // Mod: read
+  &--read {
+    background-color: #FBFBFB;
+  }
+}

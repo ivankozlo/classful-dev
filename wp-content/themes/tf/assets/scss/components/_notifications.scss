@@ -1,0 +1,43 @@
+// ===================================
+// assets/scss/components/_notifications.scss
+// ==================================
+
+/* Component: notifications */
+.notifications {
+
+  .notification-item {
+    @include margin( 10px, 'top' );
+
+    &:first-child {
+      margin-top: 0px;
+    }
+  }
+}
+
+// Item
+.notification-item {
+
+  // El: inner
+  &__inner {
+    @include padding( 14px 30px 19px 16px );
+    border: 1px solid $border-color;
+    border-radius: $border-radius-lg;
+  }
+
+  // El: left
+  &__left {
+
+  }
+
+  // El: right
+  &__right {
+    text-align: right;
+  }
+
+  // El: image
+  &__image {
+    width: 30px;
+    height: 30px;
+    margin-right: 11px;
+  }
+}

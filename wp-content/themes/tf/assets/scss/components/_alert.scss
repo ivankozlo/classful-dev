@@ -1,0 +1,35 @@
+// ===================================
+// assets/scss/components/_alert.scss
+// ==================================
+
+// Alert
+.alert {
+  font-size: $font-size-sm;
+
+  a {
+    font-weight: bold;
+    color: inherit;
+  }
+
+  &-light {
+    background-color: #f4f4f4;
+    color: $body-color;
+  }
+}
+
+.alert-notification {
+
+  // El: count
+  &__count {
+    @include width( 34px );
+    text-align: center;
+    line-height: 34px;
+    background-color: #f56556;
+    color: $white;
+    font-weight: bold;
+    font-size: $font-size-xs;
+    display: inline-block;
+    border-radius: $border-radius-lg;
+    @include margin( 9px, 'right' );
+  }
+}

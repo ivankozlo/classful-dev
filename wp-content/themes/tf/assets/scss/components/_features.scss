@@ -1,0 +1,33 @@
+// ====================================
+// assets/scss/components/_features.scss
+// ====================================
+
+/* Component: Features */
+.features {
+
+}
+
+.feature {
+  text-align: center;
+
+  // El: Inner
+  &__inner {
+    @include padding( 58px 45px 101px );
+    border: 1px solid $gray;
+  }
+
+  // El: Icon
+  &__icon {
+    @include margin( 60px, 'bottom' );
+  }
+
+  // El: Title
+  &__title {
+    @include margin( 24px, 'bottom' );
+  }
+
+  // El: Text
+  &__text {
+    margin-bottom: 0;
+  }
+}

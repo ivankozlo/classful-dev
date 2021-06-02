@@ -1,0 +1,45 @@
+// ===================================
+// assets/scss/components/_typography.scss
+// ===================================
+//
+// Section component styling goes here.
+// ==================================
+
+.font-weight-semi-bold {
+  font-weight: 600 !important;
+}
+
+.text-xxs {
+  font-size: $font-size-xxs !important;
+}
+
+.text-xs {
+  font-size: $font-size-xs !important;
+}
+
+.text-sm {
+  font-size: $font-size-sm !important;
+}
+
+.text-md {
+  font-size: $font-size-md !important;
+}
+
+.text-lg {
+  font-size: $font-size-lg !important;
+}
+
+
+.text-size-info {
+  font-size: $font-size-info !important;
+  line-height: 1.25;
+  letter-spacing: 0.4px;
+
+  &-lg {
+    font-size: $font-size-info-lg;
+  }
+}
+
+.light-text {
+  @include all-colors( $white );
+}

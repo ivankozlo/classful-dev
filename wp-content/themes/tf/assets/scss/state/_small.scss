@@ -1,0 +1,13 @@
+// ==================================
+// SCSS/STATE/_SMALL.SCSS
+// ==================================
+
+// Above 480
+@include bp-small-min {
+
+}
+
+// Below 480
+@include bp-small {
+  
+}

@@ -1,0 +1,26 @@
+// ===================================
+// assets/scss/components/_archive-header.scss
+// ===================================
+
+/* Component: Archive Header */
+.archive-header {
+  @include padding( 209px, 'top' );
+
+  @include bp-medium {
+    @include padding( 150px, 'top' );
+  }
+
+  // Sel: Heading
+  &__heading {
+    @include margin( 21px, 'bottom' );
+  }
+
+  // Sel: Text
+  &__text {
+    @include font-size( 26px );
+    line-height: 1.46153;
+    max-width: 442px;
+    color: #B8B8B8;
+    margin-bottom: 0;
+  }
+}

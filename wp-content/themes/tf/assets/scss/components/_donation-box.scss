@@ -1,0 +1,83 @@
+// ===================================
+// assets/scss/components/_donation-box.scss
+// ==================================
+
+/* Component: donation-box */
+.donation-box {
+  background-color: #fff;
+  border: 1px solid $border-color;
+  border-radius: $border-radius-section;
+
+  // El: inner
+  &__inner {
+    @include padding( 24px 30px 31px );
+  }
+
+  // El: header
+  &__header {
+
+  }
+
+  // El: title
+  &__title {
+
+  }
+
+  // El: text
+  &__text {
+
+  }
+
+  // El: goal
+  &__goal {
+
+  }
+
+  // El: progress
+  &__progress {
+
+  }
+
+  // El: info
+  &__info {
+    @include font-size( 12px );
+    color: #545454;
+    letter-spacing: 0.6px;
+  }
+
+  // El: cta
+  &__cta {
+    width: 100%;
+    font-weight: bold;
+    text-transform: none;
+    @include padding( 18px 20px );
+    border-radius: $border-radius;
+    border-width: 2px;
+
+    + .btn-block {
+      @include margin( 10px, 'top' );
+    }
+  }
+
+  // El: donate
+  &__donate {
+
+  }
+
+  // El: share
+  &__share {
+    border-color: #E7E2E7;
+    @include margin( 10px, 'bottom' );
+
+    @include bs-button-hover {
+      border-color: $primary;
+      background-color: transparent;
+      color: $primary;
+    }
+  }
+
+  // El: donate
+  &__donate {
+
+  }
+}

@@ -1,0 +1,9 @@
+// =================================================
+// assets/scss/layout/_sidebar.scss
+// =================================================
+
+/* Main: Sidebar */
+.sidebar {
+  @include padding( 47px, 'top' );
+  @include padding( 47px, 'bottom' );
+}

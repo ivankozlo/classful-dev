@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>camera-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile---Information" transform="translate(-1168.000000, -288.000000)" fill="#00676C" fill-rule="nonzero">
+            <g id="Group-11" transform="translate(1160.000000, 282.000000)">
+                <g id="Group-14-Copy-2">
+                    <g id="camera-icon" transform="translate(8.000000, 6.000000)">
+                        <path d="M4,0 L10,0 C12.209139,0 14,1.790861 14,4 L14,10 C14,12.209139 12.209139,14 10,14 L4,14 C1.790861,14 0,12.209139 0,10 L0,4 C0,1.790861 1.790861,0 4,0 Z M4,2 C2.8954305,2 2,2.8954305 2,4 L2,10 C2,11.1045695 2.8954305,12 4,12 L10,12 C11.1045695,12 12,11.1045695 12,10 L12,4 C12,2.8954305 11.1045695,2 10,2 L4,2 Z" id="Rectangle"></path>
+                        <path d="M7,10 C8.65685425,10 10,8.65685425 10,7 C10,5.34314575 8.65685425,4 7,4 C5.34314575,4 4,5.34314575 4,7 C4,8.65685425 5.34314575,10 7,10 Z M7,8 C6.44771525,8 6,7.55228475 6,7 C6,6.44771525 6.44771525,6 7,6 C7.55228475,6 8,6.44771525 8,7 C8,7.55228475 7.55228475,8 7,8 Z" id="Oval"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

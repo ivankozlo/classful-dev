@@ -1,0 +1,53 @@
+// =================================================
+// assets/scss/components/_utility.scss
+// =================================================
+
+/* Component: Utility */
+
+//
+// Text align
+//
+
+.left-text { text-align: left; }
+.right-text { text-align: right; }
+.center-text { text-align: center; }
+
+//
+// WordPress Alignment Classes
+//
+
+.alignright {
+  float: right;
+  @include margin( 0 0 25px 35px );
+}
+
+.alignleft {
+  float: left;
+  @include margin( 0 35px 25px 0 );
+}
+
+.alignnone {}
+
+//
+// Visually Hidden
+//
+
+.visually-hidden {
+  @extend %visually-hidden;
+}
+
+//
+// Links with Colors
+//
+
+//
+// Responsive Classes
+//
+
+.hide--on-mobile {
+  @include bp-medium { display: none !important; }
+}
+
+.hide--on-desktop {
+  @include bp-medium-min { display: none !important; }
+}

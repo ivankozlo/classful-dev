@@ -1,0 +1,21 @@
+// ====================================
+// assets/scss/components/_m07.scss
+// ====================================
+
+/* Component: M07 */
+.m07 {
+  @include padding( 51px, 'top' );
+  @include padding( 74px, 'bottom' );
+
+  // El: hr
+  &__hr {
+    @include margin( 51px, 'bottom' );
+    @include center-with-width( 1199px );
+    background-color: $border-color;
+  }
+
+  // El: heading
+  &__heading {
+    @include margin( 30px, 'bottom' );
+  }
+}

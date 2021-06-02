@@ -1,0 +1,72 @@
+// ===================================
+// assets/scss/components/_promote-card.scss
+// ==================================
+
+/* Component: promote-card */
+.promote-card {
+  @include padding( 28px 27px 23px 29px );
+  @include all-colors( #fff );
+  @include bg-img-full( 'icons/facebook-watermark.svg', $size: auto, $position: left 0px bottom 46px );
+
+  // El: header
+  &__header {
+    border-bottom: 1px solid rgba( #D8D8D8, 0.2 );
+    @include padding( 23px, 'bottom' );
+  }
+
+  // El: body
+  &__body {
+    @include padding( 28px, 'top' );
+    @include padding( 28px, 'bottom' );
+  }
+
+  // El: footer
+  &__footer {
+    text-align: right;
+    @include padding( 28px, 'top' );
+  }
+
+  // El: btn
+  &__btn {
+    text-transform: none;
+    font-size: $font-size-xs;
+    color: $body-color !important;
+  }
+
+  // El: social-icon
+  &__social-icon {
+    font-size: calc-rem( 28px ) !important;
+  }
+
+  // El: growth
+  &__growth {
+    max-width: 176px;
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  // El: growth-per
+  &__growth-per {
+    @include font-size( 34px );
+    line-height: 1.1842;
+  }
+
+  // Mod: facebook
+  &--facebook {
+    background-color: #1877f2;
+
+    .promote-card__social-icon {
+      color: #1877f2;
+    }
+  }
+
+  // Mod: twitter
+  &--twitter {
+    background-color: #1da1f2;
+    @include bg-img-only( 'icons/twitter-watermark.svg' );
+
+    .promote-card__social-icon {
+      color: #1da1f2;
+    }
+  }
+}

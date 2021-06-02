@@ -1,0 +1,42 @@
+// ====================================
+// assets/scss/components/_steps.scss
+// ====================================
+
+/* Component: steps */
+.steps {
+
+}
+
+.step {
+  text-align: center;
+  @include margin( 40px, 'bottom' );
+
+  // El: Name
+  &__name {
+    color: $secondary;
+    @include font-size( 40px );
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    min-height: 152px;
+    @include padding( 50px 0 0 );
+
+    span {
+      @include position( $top: 0, $left: 0, $width: 100% );
+      color: #ffffff;
+      @include font-size( 120px );
+      line-height: 1.266666667;
+      z-index: -1;
+    }
+  }
+
+  // El: Title
+  &__title {
+    @include margin( 24px, 'bottom' );
+  }
+
+  // El: Text
+  &__text {
+    margin-bottom: 0;
+  }
+}

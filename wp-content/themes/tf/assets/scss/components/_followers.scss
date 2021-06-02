@@ -1,0 +1,102 @@
+// ===================================
+// assets/scss/components/_followers.scss
+// ==================================
+
+/* Component: followers */
+.followers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 68px;
+
+  .follower {
+    width: 20%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+    min-width: 236px;
+
+    &:nth-child(5n+1) {
+      clear: both;
+    }
+
+    // Responsive: < Extra Large
+    @include bp-x-large {
+      width: 25%;
+    }
+  }
+}
+
+.follower {
+
+  // El: inner
+  &__inner {
+    border: 1px solid $border-color;
+    border-radius: $border-radius-section;
+    text-align: center;
+    @include padding( 21px 45px 22px );
+  }
+
+  // El: image
+  &__image {
+
+    .cover-image {
+      padding-bottom: 100%;
+    }
+  }
+
+  // El: address
+  &__address {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+// Followers message
+.followers-message {
+  @include padding( 20px 30px 20px 23px );
+  background: #FFFFFF;
+  box-shadow: 0 3px 8px 0 rgba( #000, .2 );
+  border-radius: $border-radius-section;
+
+  // El: avatar
+  &__avatar {
+    width: 38px;
+    height: 38px;
+    margin-right: 16px;
+    margin-top: 6px;
+  }
+
+  // El: field-wrap
+  &__field-wrap {
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  // El: field
+  &__field {
+    @include padding( 13px 88px 14px 19px );
+    font-size: $font-size-xxs;
+    border-radius: $border-radius-xl;
+    color: $body-color;
+    resize: none;
+    line-height: 1.5;
+    @extend %transition-fast;
+    border-color: $gray
+  }
+
+  // El: submit
+  &__submit {
+    @include padding( 13px 25px 17px );
+    border: none;
+    margin-left: 36px;
+
+    &.disabled,
+    :disabled {
+      @include opacity( 0.4 );
+    }
+  }
+}

@@ -1,0 +1,57 @@
+// ====================================
+// assets/scss/components/_m10.scss
+// ====================================
+
+/* Component: M10 */
+.m10 {
+  position: relative;
+  @include padding( 85px, 'top' );
+  @include padding( 80px, 'bottom' );
+  @include margin( 78px, 'top' );
+  @include margin( 86px, 'bottom' );
+
+  // El: sep
+  &__sep {
+    @include position( $left: 0, $width: 100%, $index: 1 );
+    height: 0;
+
+    // Mod: top
+    &--top {
+      bottom: 100%;
+      height: aspect-ratio( 264px 66px );
+      margin-bottom: -1px;
+    }
+
+    // Mod: bottom
+    &--bottom {
+      top: 100%;
+      height: aspect-ratio( 264px 50px );
+      margin-top: -2px;
+    }
+  }
+
+  // El: sep-2
+  &__sep-2 {
+    @include position( $left: 0, $width: 100%, $index: 0 );
+    height: 0;
+
+    // Mod: top
+    &--top {
+      bottom: 100%;
+      height: aspect-ratio( 264px 66px );
+      margin-bottom: 12px;
+    }
+
+    // Mod: bottom
+    &--bottom {
+      top: 100%;
+      height: aspect-ratio( 264px 50px );
+      margin-top: 20px;
+    }
+  }
+
+  // El: inner
+  &__inner {
+    @include center-with-width( 1032px );
+  }
+}

@@ -1,0 +1,118 @@
+// ====================================
+// assets/scss/components/_toggle.scss
+// ====================================
+
+.toggle-container {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+// Toggle
+.toggle {
+  display: inline-block;
+  vertical-align: middle;
+
+  // Input
+  &__input {
+    display: none;
+
+    // add default box-sizing for this scope
+    &, &:after, &:before, & *, & *:after, & *:before, & + .toggle__btn {
+      box-sizing: border-box;
+
+      &::selection {
+        background: none;
+      }
+    }
+
+    // Mod: Active
+    &:checked + .toggle__btn {
+
+      &:before {
+        // background: $secondary;
+      }
+
+      &:after {
+        left: 52%;
+      }
+    }
+
+    // Mod: Active
+    &:not(:checked) + .toggle__btn {
+
+      &:before {
+        background: #ECECEC;
+      }
+
+      &:after {
+        background: #BFBFBF;
+      }
+    }
+  }
+
+  // Button
+  &__btn {
+    outline: 0;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    margin: 0;
+    @include size-rem( 44px 24px );
+
+    &:after,
+    &:before {
+      content: "";
+      @include position( $top: 0, $left: 0, $width: 50%, $height: 100% );
+      @extend %transition-fast;
+    }
+
+    &:before {
+      border-radius: 2em;
+      background: $gray-300;
+      @include height( 10px );
+      width: 100%;
+      top: 50%;
+      @include margin( -5px, 'top' );
+    }
+
+    &:after {
+      border-radius: 50%;
+      background: #fff;
+      @include size-rem( 24px );
+      left: -1px;
+    }
+  }
+
+  // Mod: Success
+  &--primary {
+
+    .toggle__btn:before {
+      background-color: rgba( $primary, 0.4 );
+    }
+
+    .toggle__btn:after {
+      background-color: $primary;
+    }
+  }
+
+  // Mod: Secondary
+  &--secondary {
+
+    .toggle__btn:before {
+      background-color: $secondary-light;
+    }
+
+    .toggle__btn:after {
+      background-color: $secondary;
+    }
+  }
+
+  // Mod: Danger
+  &--danger {
+
+    .toggle__btn:before {
+      background-color: $danger;
+    }
+  }
+}

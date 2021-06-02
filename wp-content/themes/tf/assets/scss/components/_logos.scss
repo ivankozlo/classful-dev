@@ -1,0 +1,14 @@
+// ====================================
+// assets/scss/components/_logos.scss
+// ====================================
+
+/* Component: logos */
+.logos {
+  display: flex;
+  justify-content: space-around;
+
+  // El: item
+  &__item {
+    @include margin( 0px 10px 15px );
+  }
+}

@@ -1,0 +1,31 @@
+// ===================================
+// assets/scss/components/_search-form.scss
+// ==================================
+
+/* Component: search-form */
+.search-form {
+  position: relative;
+  margin: 0;
+
+  // El: icon
+  &__icon {
+    @include position( $top: 10px, $left: 13px );
+    color: $body-color;
+    @include opacity( 0.4 );
+    margin: 0;
+  }
+
+  [type=search] {
+    @include padding( 10px 20px 12px 34px );
+    font-size: $font-size-xxs;
+    border-color: $border-color;
+    border-radius: calc-rem( 4px );
+    background-color: transparent;
+    color: $body-color;
+    margin: 0;
+
+    @include placeholder {
+      color: rgba( $body-color, 0.4 );
+    }
+  }
+}

@@ -1,0 +1,177 @@
+// =================================================
+// assets/scss/components/_buttons.scss
+// =================================================
+
+/* Component: Buttons */
+.btn {
+  letter-spacing: 0.3px;
+
+  &-pill {
+    border-radius: 50em !important;
+  }
+
+  // Circle.
+  &-circle {
+    @include size-rem( 48px 48px );
+    @include font-size( 16px );
+    border-radius: 50%;
+  }
+
+  // State: Disabled
+  @include bs-button-disabled {
+    &:not(.btn-link):not(.btn-ghost) {
+      color: $text-color-light;
+      background-color: $gray;
+      border-color: $gray;
+      @include opacity( 1 );
+    }
+  }
+
+  // Primary
+  &-primary {
+
+    @include bs-button-hover {
+      border-color: $primary-hover;
+      background-color: $primary-hover;
+    }
+  }
+
+  // Secondary
+  &-secondary {
+
+    @include bs-button-hover {
+
+    }
+  }
+
+  // Warning
+  &-warning {
+    color: $warning;
+    background-color: $warning-light;
+    border-color: $warning-light;
+
+    @include bs-button-hover {
+      // color: $white;
+      // background-color: $primary-hover;
+      // border-color: $primary-hover;
+    }
+  }
+
+  // Make primary buttons uppercase.
+  &-gray {
+    text-transform: uppercase;
+    color: $primary;
+
+    @include bs-button-hover {
+      color: $white;
+      background-color: $primary-hover;
+      border-color: $primary-hover;
+    }
+  }
+
+  // Make primary buttons uppercase.
+  &-white {
+    text-transform: uppercase;
+    background-color: $white;
+    color: $secondary !important;
+
+    @include bs-button-hover {
+      color: $secondary;
+      background-color: $gray;
+      border-color: $gray;
+    }
+
+    &:focus {
+      @include input-focus-outline( $white );
+    }
+  }
+
+  // Link
+  &-link {
+    color: $gray-400;
+
+    @include bs-button-hover {
+      color: $primary;
+      text-decoration: none;
+    }
+
+    @include bs-button-disabled {
+      @include opacity( 0.4 )
+    }
+  }
+
+  //
+  // Outline
+  //
+
+  // Outline: Secondary
+  &-outline-secondary {
+    color: $secondary;
+  }
+
+  // Outline: Gray
+  &-outline-gray {
+    color: $primary;
+    border-color: $gray-300;
+
+    @include bs-button-hover {
+      background-color: $primary;
+      color: #ffffff;
+    }
+  }
+
+  // Outline: White
+  &-outline-white {
+    color: $white !important;
+    border-color: $white;
+
+    @include bs-button-hover {
+      background-color: $white;
+      color: $secondary !important;
+    }
+
+    &:focus {
+      @include input-focus-outline( $white );
+    }
+  }
+
+  // With Icon
+  &-with-icon {
+
+    img, svg, i, span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    img, svg, i {
+      font-size: $font-size-lg;
+
+      &:not(:last-child) {
+        @include margin( 4px, 'right' );
+      }
+
+      &:last-child {
+        @include margin( 4px, 'left' );
+      }
+    }
+  }
+
+  // Icon
+  &-icon {
+    @include padding( 9px 5px );
+    line-height: normal;
+
+    img, svg, i {
+      display: inline-block;
+      vertical-align: middle;
+      // font-size: $font-size-lg;
+    }
+  }
+
+  // Button Align: Left
+  &-left {
+    text-align: left;
+    @include padding( 15px, 'left' );
+    @include padding( 15px, 'right' );
+  }
+}

@@ -1,0 +1,63 @@
+// ====================================
+// assets/scss/components/_updates.scss
+// ====================================
+
+/* Component: updates */
+.updates {
+
+  .update {
+    @include margin( 18px, 'top' );
+
+    &:first-child {
+      margin-top: 0px;
+    }
+  }
+}
+
+.update {
+
+  // El: inner
+  &__inner {
+    background: $gray;
+    border-radius: $border-radius-lg;
+    @include padding( 19px 40px 36px );
+    text-align: center;
+  }
+
+  // El: title
+  &__title {
+    @include margin( 14px, 'bottom' );
+  }
+
+  // El: text
+  &__text {
+    @include margin( 25px, 'bottom' );
+    @include center-with-width( 715px );
+
+    p {
+      font-size: $font-size-sm;
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  // El: user
+  &__user {
+
+  }
+
+  // El: user-image
+  &__user-image {
+    width: 30px;
+    height: 30px;
+    @include margin( 12px, 'right' );
+    border-radius: $border-radius;
+  }
+
+  // El: user-text
+  &__user-text {
+
+  }
+}

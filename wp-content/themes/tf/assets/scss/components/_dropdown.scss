@@ -1,0 +1,66 @@
+// ===================================
+// assets/scss/components/_dropdown.scss
+// ===================================
+//
+// Section component styling goes here.
+// ==================================
+
+.dropdown {
+
+
+  .dropdown-toggle {
+    color: $dark;
+    font-weight: $font-weight-bold;
+
+    &:after {
+
+    }
+  }
+
+  .dropdown-item {
+    font-size: $font-size-base;
+    line-height: 1.333333333;
+
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &.active, &:active, &:hover {
+      color: $primary;
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+// Dropdown Menu
+.dropdown-menu {
+  padding: 0;
+  border: none;
+  border-radius: $border-radius;
+  background: #FFFFFF;
+  box-shadow: 0 8px 20px 0 rgba(97,44,21,0.19);
+  min-width: 183px;
+
+  // Mod: Two Cols
+  &.dropdown-two-cols {
+    // display: flex;
+    // flex-wrap: wrap;
+
+    .dropdown-item {
+      width: 50%;
+      // flex-basis: 50%;
+      float: left;
+      clear: none;
+
+      :nth-child(2n+3) {
+        clear: both;
+      }
+    }
+  }
+}

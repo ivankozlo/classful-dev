@@ -1,0 +1,21 @@
+// ====================================
+// assets/scss/components/_m02.scss
+// ====================================
+
+/* Component: M02 */
+.m02 {
+  @include padding( 75px, 'top' );
+  @include padding( 119px, 'bottom' );
+
+  // El: Header
+  &__header {
+    @include margin( 140px, 'bottom' );
+    text-align: center;
+    @include center-with-width( 880px );
+  }
+
+  // El: Heading
+  &__heading {
+    margin-bottom: 0;
+  }
+}

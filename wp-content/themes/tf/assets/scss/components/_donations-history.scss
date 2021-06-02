@@ -1,0 +1,21 @@
+// ===================================
+// assets/scss/components/_donations-history.scss
+// ==================================
+
+/* Component: donations-history */
+.donations-history {
+  @include padding( 22px 29px 31px );
+  border: 1px solid $border-color;
+  border-radius: $border-radius-section;
+
+  // El: header
+  &__header {
+    @include margin( 20px, 'bottom' );
+  }
+
+  // El: export
+  &__export {
+    @include padding( 9px 24px 10px );
+    font-size: $font-size-xxs;
+  }
+}

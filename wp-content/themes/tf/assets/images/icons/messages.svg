@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="15px" viewBox="0 0 14 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>messages</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard" transform="translate(-67.000000, -188.000000)" fill="#3f093d" fill-rule="nonzero">
+            <g id="Group-8" transform="translate(27.000000, 80.000000)">
+                <g id="Group-18" transform="translate(18.000000, 27.000000)">
+                    <g id="Messages---Off" transform="translate(0.000000, 62.000000)">
+                        <g id="Group-12" transform="translate(14.000000, 11.000000)">
+                            <g id="messages" transform="translate(9.000000, 9.000000)">
+                                <path d="M8.22370207,11.6480932 L2.1263416,11.6480932 C0.537357786,11.6480932 -0.75,10.3607354 -0.75,8.77175156 L-0.75,2.62559761 C-0.75,1.03720218 0.537513404,-0.25 2.1263416,-0.25 L9.8736584,-0.25 C11.4624866,-0.25 12.75,1.03720218 12.75,2.62559761 L12.75,12.1353591 C12.75,13.3389071 11.3748809,14.0247648 10.4134414,13.3006233 L8.22370207,11.6480932 Z M11.25,2.62559761 C11.25,1.8657105 10.6341406,1.25 9.8736584,1.25 L2.1263416,1.25 C1.36585936,1.25 0.75,1.8657105 0.75,2.62559761 L0.75,8.77175156 C0.75,9.53230825 1.36578491,10.1480932 2.1263416,10.1480932 L8.47494523,10.1480932 C8.63798814,10.1480932 8.79659047,10.2012235 8.92673249,10.2994378 L11.25,12.052738 L11.25,2.62559761 Z" id="Stroke-8"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

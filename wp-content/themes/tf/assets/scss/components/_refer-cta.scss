@@ -1,0 +1,51 @@
+// ===================================
+// assets/scss/components/_refer-cta.scss
+// ==================================
+
+/* Component: refer-cta */
+.refer-cta {
+  @include margin( 30px, 'bottom' );
+  position: relative;
+
+  &:before {
+    content: '';
+    @include position( $top: 0, $left: per-calc( 577px, 1329px ), $width: 360px, $height: 100% );
+    @include bg-img-full( 'illustration-refer@2x.png', $size: 100% auto, $position: center -40px );
+  }
+
+  // &:after {
+  //   content: '';
+  //   @include position( $bottom: 0, $right: 0, $width: 163px, $height: 109px );
+  //   @include bg-img-full( 'grass-shape@2x.png', $size: 382px 464px, $position: left top );
+  // }
+
+  // El: inner
+  &__inner {
+    @include padding( 33px 34px 34px 46px );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // El: text-wrap
+  &__text-wrap {
+    max-width: 486px;
+  }
+
+  // El: heading
+  &__heading {
+    line-height: 1.25;
+    @include margin( 14px, 'bottom' );
+  }
+
+  // El: text
+  &__text {
+    line-height: 1.25;
+  }
+
+  // El: btn
+  &__btn {
+    max-width: 254px;
+    width: 100%;
+  }
+}

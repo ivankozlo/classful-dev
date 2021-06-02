@@ -1,0 +1,18 @@
+// ===================================
+// assets/scss/components/_conversation-profile.scss
+// ==================================
+
+/* Component: conversation-profile */
+.conversation-profile {
+
+  // El: image
+  &__image {
+    @include margin( 30px, 'bottom' );
+  }
+
+  // El: info
+  &__info {
+    @include margin( 18px, 'top' );
+    @include center-with-width( 715px );
+  }
+}

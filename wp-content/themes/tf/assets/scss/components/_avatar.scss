@@ -1,0 +1,17 @@
+// ====================================
+// assets/scss/components/_avatar.scss
+// ====================================
+
+/* Component: Avatar */
+.avatar {
+  display: inline-block;
+  vertical-align: middle;
+  @include size-rem( 28px );
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  // Mod: Large
+  &--large {
+    @include size-rem( 36px );
+  }
+}

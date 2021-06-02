@@ -1,0 +1,17 @@
+// =================================================
+// assets/scss/components/_post-update-form.scss
+// =================================================
+
+/* Component: post-update-form */
+.post-update-form {
+
+  .form-control {
+    font-size: $font-size-xs;
+    line-height: 1.5;
+    border-radius: $border-radius-lg;
+
+    @include placeholder {
+      color: #626262;
+    }
+  }
+}

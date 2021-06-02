@@ -1,0 +1,48 @@
+// =================================================
+// assets/scss/layout/_navbar.scss
+// =================================================
+
+/* Header: Navbar */
+.navbar {
+  @include padding( 18px 0px );
+
+  // Navbar light
+  &.navbar-light {
+
+  }
+
+  // Brand
+  .navbar-brand {
+    @include padding( 6px 0px );
+
+    img {
+      vertical-align: top;
+    }
+  }
+
+  // Navbar nav
+  .navbar-nav {
+
+    .nav-link {
+      font-weight: bold;
+      letter-spacing: 0.5px;
+
+      span {
+        @include padding( 5px, 'bottom' );
+        border-bottom: 0px solid $reserved;
+        @extend %transition-fast;
+      }
+    }
+
+    li.current-menu-item a,
+    li > a.active,
+    a:hover {
+      color: $body-color;
+
+      span {
+        border-color: $reserved;
+        border-bottom-width: 3px;
+      }
+    }
+  }
+}

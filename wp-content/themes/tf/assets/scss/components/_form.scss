@@ -1,0 +1,562 @@
+// =================================================
+// assets/scss/components/_lists.scss
+// =================================================
+
+/* Component: Forms */
+.form-control {
+
+  &:focus {
+    outline: none;
+    border-color: $primary;
+  }
+}
+
+// Form Control Label Over
+.form-label-over {
+  position: relative;
+  @include padding( 22px, 'top' );
+
+  label {
+    @include position( $top: calc-rem( 22px ), $left: 0 );
+    padding: $input-padding-y $input-padding-x;
+    color: $input-placeholder-color;
+    @extend %transition-fast;
+    user-select: none;
+    cursor: text;
+  }
+
+  .form-control {
+
+    &:disabled,
+    &[readonly] {
+      background-color: $input-bg;
+      @include opacity( 0.6 );
+    }
+  }
+
+  // Select
+  select.form-control {
+    height: 40px;
+  }
+
+  // Textarea
+  textarea.form-control {
+    @extend %transition-fast;
+  }
+
+  // Mod: Not Filled
+  &--is-not-filled {
+
+    textarea.form-control {
+      height: 40px;
+    }
+  }
+
+  // Mod: Is Filled
+  &--is-filled,
+  &--is-active {
+
+    label {
+      top: 0;
+      padding: 0;
+      user-select: auto;
+    }
+
+    textarea.form-control {
+      height: 74px;
+    }
+  }
+}
+
+// Merge inputs
+.form-merge-inputs {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+
+  select, .sbHolder {
+    width: 105px;
+    flex-shrink: 0;
+  }
+
+  .sbSelector {
+    border-right: none !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+  }
+
+  .form-control {
+    border-left: none;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  // El: sep
+  &__sep {
+    height: 36px;
+    width: 2px;
+    @include position( $top: 11px, $left: 105px );
+    background-color: #E5E5E5;
+  }
+}
+
+// Custom Checkbox
+.custom-checkbox {
+
+  .custom-control-label {
+    color: $body-color;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: $font-size-sm;
+    line-height: 1.3333;
+    margin: 0;
+  }
+
+  .custom-control-input:checked ~ .custom-control-label {
+
+    &:after {
+      @extend .fa;
+      content: fa-content( $fa-var-check );
+      @include fa-icon;
+      @include font-size( 14px );
+      border-color: $secondary;
+      font-weight: 900;
+      line-height: 1.3;
+      color: $white;
+      text-align: center;
+      line-height: $custom-control-indicator-size;
+    }
+  }
+
+  .custom-control-input:disabled ~ .custom-control-label {
+    @include opacity( 0.4 );
+
+    &:before {
+      background-color: transparent;
+    }
+  }
+
+  // No Lable
+  &.custom-checkbox-no-lable {
+    padding: 0;
+    width: $custom-control-indicator-size;
+    height: $custom-control-indicator-size;
+    min-height: 0;
+
+    .custom-control-label {
+      width: $custom-control-indicator-size;
+      height: $custom-control-indicator-size;
+
+      &:before,
+      &:after {
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}
+
+// Checkboxes-group
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+
+  .checkbox-group-item {
+    width: 33.33%;
+    @include margin( 17px, 'top' );
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+// Validation: Error
+.has-error {
+
+  label {
+    color: $danger;
+  }
+}
+
+// Validation: Success
+.has-success {
+
+  label {
+    color: $success;
+  }
+}
+
+// Is Invalid
+.invalid-feedback, .valid-feedback {
+  @include font-size( 10px );
+}
+
+// Bootstrap: Was Validated
+.was-validated {
+
+  .form-control:invalid,
+  .form-control.is-invalid,
+  .has-error .form-control {
+    border-color: transparent;
+    border-bottom-color: $danger;
+
+    &:focus {
+      box-shadow: none;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-left-color: transparent;
+    }
+  }
+
+  .form-control:valid,
+  .form-control.is-valid,
+  .has-success .form-control {
+    border-color: transparent;
+    border-bottom-color: $success;
+
+    &:focus {
+      box-shadow: none;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-left-color: transparent;
+    }
+  }
+}
+
+// SelectBox Plugin Styling
+.sbHolder {
+  position: relative;
+  width: 100%;
+
+  .sbSelector {
+    display: block;
+    width: 100%;
+    height: $input-height;
+    padding: $input-padding-y $input-padding-x;
+    font-family: $input-font-family;
+    font-size: $input-font-size;
+    font-weight: $input-font-weight;
+    line-height: $input-line-height;
+    color: $input-color;
+    background-color: $input-bg;
+    border: $input-border-width solid $input-border-color;
+    background-clip: padding-box;
+    min-height: 40px;
+    border-radius: $input-border-radius;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $color__text--base;
+    }
+
+    &:focus {
+      @include input-focus-outline( $primary );
+    }
+  }
+
+  .sbToggleOpen + .sbSelector {
+    @include input-focus-outline( $primary );
+  }
+
+  .sbToggle {
+    @include position( $top: 0, $right: 0 );
+    height: 60px;
+    width: 42px;
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    &:after {
+      @extend .fa;
+      content: fa-content( $fa-var-chevron-down );
+      @include fa-icon;
+      font-weight: 900;
+      @include font-size( 15px );
+      color: #0E020E;
+      display: block;
+    }
+
+    // Open
+    &.sbToggleOpen {
+
+      &:after {
+        transform: rotate(180deg);
+      }
+
+      + .sbSelector {
+        border-color: $primary;
+      }
+    }
+  }
+
+  .sbOptions {
+    margin: 0;
+    background-color: $white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 197px !important;
+    z-index: 100;
+    list-style: none;
+    @include position( $left: 0, $width: 100% );
+    top: 100% !important;
+    // box-shadow: 0 8px 20px 0 rgba(97,44,21,0.19);
+    min-width: 183px;
+    @include padding( 12px 0px );
+    width: 100%;
+    margin-top: 5px;
+    border: $input-border-width solid #E5E5E5;
+    border-radius: $input-border-radius;
+
+    a {
+      display: block;
+      @include padding( 9px 18px );
+      font-size: $font-size-base;
+      line-height: 1.333333;
+      color: $dark;
+
+      &:hover {
+        background-color: $gray;
+        color: $dark;
+        text-decoration: none;
+      }
+    }
+
+    li {
+      padding: 0;
+
+      &:first-child {
+        border-top: none;
+      }
+
+      &.sbActive,
+      &.active {
+
+        a {
+          color: $primary;
+          background-color: transparent;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+// Fancy Select
+.fancy-select {
+
+
+  // Mod: Two Columns
+  &--two-cols {
+
+    .sbOptions {
+
+      li {
+        width: 50%;
+        float: left;
+
+        :nth-child(2n+3) {
+          clear: both;
+        }
+      }
+    }
+  }
+}
+
+// Fancy Search
+.fancy-search {
+  position: relative;
+
+  // Form control
+  .form-control {
+  }
+
+  .form-control:focus + .dropdown-menu {
+    display: block;
+  }
+
+  // Dropdown menu
+  .dropdown-menu {
+    top: 40px;
+    width: 100%;
+    @include padding( 12px 0px );
+    height: 273px;
+    overflow-y: scroll;
+
+    .dropdown-item {
+      display: block;
+      @include padding( 9px 18px );
+      font-size: $font-size-base;
+      line-height: 1.333333;
+      color: $dark;
+      white-space: unset;
+    }
+  }
+
+  // Submit
+  [type=submit], [type=button] {
+    @include position( $top: 0, $right: 0, $width: 44px, $height: 40px );
+    border-left: 1px solid $white;
+  }
+}
+
+// IonRangerSlider
+.irs {
+
+  // Bar
+  &-bar {
+    height: 5px;
+  }
+
+  // Mod: Flat
+  &--flat {
+    height: 65px;
+    margin-bottom: 40px;
+    position: relative;
+
+    .irs {
+      height: 100%;
+    }
+
+    .irs-min, .irs-max {
+      // bottom: 0;
+      top: 100%;
+      background-color: transparent;
+      border-radius: 0;
+      font-size: $font-size-xxs;
+      color: $text-color-light;
+      margin-top: 16px;
+      padding: 0;
+
+      &:after {
+        content: '';
+        height: 12px;
+        background-color: $secondary-light;
+        @include position( $bottom: 100%, $left: 0 );
+        margin-bottom: 2px;
+        width: 1px;
+      }
+    }
+
+    .irs-min {
+
+      &:before {
+        content: 'Min ';
+      }
+    }
+
+    .irs-max {
+
+      &:before {
+        content: 'Max ';
+      }
+
+      &:after {
+        left: auto;
+        right: 0;
+      }
+    }
+
+    .irs-from,
+    .irs-to,
+    .irs-single {
+      height: 36px;
+      top: 0;
+      min-width: 76px;
+      text-align: center;
+      background-color: #fff;
+      border-radius: $border-radius;
+      color: $body-color;
+      border: 1px solid $gray-300;
+      @include font-size( 12px );
+      line-height: 1.333333333;
+      font-weight: $font-weight-medium;
+      font-family: $font-family-base;
+      @include padding( 9px 5px );
+
+      &:before {
+        display: none;
+      }
+    }
+
+    .irs-from {
+      left: 0 !important;
+    }
+
+    .irs-to {
+      right: 0 !important;
+      left: auto !important;
+    }
+
+    .irs-single {
+
+    }
+
+    .irs-line {
+      background-color: $secondary-light;
+      height: 5px;
+      border-radius: 0;
+      top: auto;
+      bottom: 5px;
+      position: absolute;
+      left: 0;
+      width: 100%;
+    }
+
+    .irs-bar {
+      height: 5px;
+      top: auto;
+      bottom: 5px;
+      background-color: $secondary;
+    }
+
+    .irs-handle {
+      width: 30px;
+      height: 30px;
+      border: 2px solid #fff;
+      background-color: $secondary;
+      border-radius: 50em;
+      top: auto;
+      bottom: -7px;
+
+      i {
+        display: none !important;
+      }
+    }
+
+    // Double
+    &.range-slider--double {
+
+      .irs-to, .irs-from {
+        visibility: visible !important;
+        width: calc(50% - 12px);
+      }
+
+      .irs:before {
+        content: '-';
+        @include position( $top: 9px, $left: 50% );
+        @include margin( -2px, 'left' );
+        color: $gray-400;
+      }
+
+      .irs-single {
+        display: none !important;
+      }
+    }
+
+    // Disabled
+    &.disabled {
+
+      .irs-bar {
+        background-color: $gray-300;
+      }
+    }
+  }
+}

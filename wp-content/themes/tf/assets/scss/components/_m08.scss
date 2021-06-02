@@ -1,0 +1,25 @@
+// ====================================
+// assets/scss/components/_m08.scss
+// ====================================
+
+/* Component: M08 */
+.m08 {
+  @include padding( 140px, 'top' );
+  @include padding( 71px, 'bottom' );
+
+  // El: text
+  &__text {
+    @include center-with-width( 927px );
+    line-height: 1.1923;
+
+    span {
+      position: relative;
+
+      &:before {
+        content: '';
+        background: $pink;
+        @include position( $bottom: 0, $left: 0, $width: 100%, $height: 26px, $index: -1 );
+      }
+    }
+  }
+}

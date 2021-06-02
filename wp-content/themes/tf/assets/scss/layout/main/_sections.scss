@@ -1,0 +1,25 @@
+// =================================================
+// assets/scss/layout/_sections.scss
+// =================================================
+
+/* Main: Section */
+.section {
+  @include padding( 100px, 'top' );
+  @include padding( 100px, 'bottom' );
+
+  // E: Header
+  &__header {
+    @include margin( 40px, 'bottom' );
+    @include padding( 20px, 'bottom' );
+    position: relative;
+
+    &:after {
+      content: '';
+      @include position( $bottom: 0, $left: 50% );
+      @include size-rem( 150px 2px );
+      @include margin( -75px, 'left' );
+      border-top: 2px solid darken( $color__light, 8% );
+      border-bottom: 2px solid darken( $color__light, 8% );
+    }
+  }
+}

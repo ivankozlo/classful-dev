@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="css/croppa.css?ver=1.3.0" media="screen" rel="stylesheet" type="text/css" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body{
+            padding: 0;
+            margin: 0;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .container{
+            max-width: 100%;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Croppa JS</h1>
+
+    <div class="container">
+        <div id="cropping-area"></div>
+    </div>
+
+    <div class="container">
+
+        <div style="text-align: center; margin: 30px auto;">
+
+            <!--<input id="zoom" type="range" step="0.01" min="1" max="5" value="1"> -->
+            
+            <br><br>
+        
+            <button id="rotate_left">Rotate Left</button>
+            <button id="get_result">Get Result</button>
+            <button id="rotate_right">Rotate Right</button>
+
+        </div>
+
+        <p style="display: block; text-align: center; margin: 30px auto;">
+            <a href="index.html">Example 1</a> - 
+            <a href="ex2.html">Example 2</a>
+        </p>
+
+    </div>  
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" ></script>
+
+    <script src="js/croppa.js?ver=1.3.0"></script>
+
+    <script>
+        //show time
+        var croppa = new Croppa({
+            image_url: 'img/5.jpg',
+            container: '#cropping-area',
+            container_size: [500, 500],
+            crop_box_size: [700, 350],
+            show_zoomer: true,
+        });
+
+        jQuery('#zoom').on('input', function(e){
+            croppa.zoom( $(this).val() );
+        });
+
+        jQuery('#rotate_left').click(function(e){
+            e.preventDefault();
+            croppa.rotate_left();
+        });
+
+        jQuery('#rotate_right').click(function(e){
+            e.preventDefault();
+            croppa.rotate_right();
+        });
+
+        jQuery('#get_result').click(function(e){
+            e.preventDefault();
+
+            var result = croppa.result();
+
+            var image = new Image();
+            image.src = result;
+
+            var w = window.open("");
+            w.document.write(image.outerHTML);
+        });
+
+    </script>
+
+</body>
+</html>

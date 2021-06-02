@@ -1,0 +1,223 @@
+// ===================================
+// assets/scss/components/_edit-profile.scss
+// ==================================
+
+/* Component: edit-profile */
+.edit-profile {
+
+}
+
+// Edit Profile Fields
+.edit-profile-fields {
+  @include margin( 30px, 'top' );
+
+  label {
+    font-weight: bold;
+    font-size: $font-size-xs;
+    line-height: 1.625;
+    @include margin( 4px, 'bottom' );
+  }
+
+  // El: inner
+  &__inner {
+    @include padding( 53px 59px 71px );
+    border-radius: $border-radius-section;
+    border: 1px solid $border-color;
+  }
+}
+
+// Edit Profile Cover
+.edit-profile-cover {
+  position: relative;
+  min-height: 250px;
+  background-color: $gray;
+
+  // El: bg
+  &__bg {
+    @include position( $top: 0, $left: 0, $width: 100%, $height: 100% );
+  }
+
+  // El: inner
+  &__inner {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    @include padding( 35px 19px 22px 59px );
+  }
+
+  // El: image
+  &__image {
+    border: 4px solid #fff;
+    border-radius: $border-radius-section;
+    position: relative;
+    width: 180px;
+    margin: 0;
+
+    .cover-image {
+      padding-bottom: aspect-ratio( 150px 180px );
+    }
+  }
+}
+
+// Your Goal Range
+.your-goal-range {
+  position: relative;
+
+  .irs--flat {
+    margin-top: 16px;
+    height: 30px;
+  }
+
+  .irs-single {
+    background-color: transparent;
+    border: none;
+    font-size: $h4-font-size;
+    color: $secondary;
+    font-weight: bold;
+    padding: 0;
+    left: auto !important;
+    right: 0;
+    bottom: 100%;
+    margin-bottom: 17px;
+    top: auto;
+  }
+}
+
+// Edit gallery
+.edit-gallery {
+  margin-left: -8px;
+  margin-right: -8px;
+
+  .edit-gallery-item {
+    padding-left: 8px;
+    padding-right: 8px;
+
+    .cover-image {
+      padding-bottom: 100%;
+    }
+
+    // Mod: placeholder
+    &--placeholder {
+
+      .cover-image {
+        border: 1px dashed $border-color;
+      }
+
+      .btn {
+        border-color: $border-color;
+      }
+    }
+  }
+}
+
+// Crop Image
+.crop-image {
+  background: #f4f4f4;
+
+  .croppie-container {
+    width: 592px;
+    height: 451px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #f4f4f4;
+
+    .cr-viewport {
+      box-shadow: 0 0 0 2000px rgba(#000, .5);
+      border: none;
+      border-radius: $border-radius-section;
+    }
+  }
+
+  .cr-slider {
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 100%; /* Specific width is required for Firefox. */
+    background: transparent; /* Otherwise white in Chrome */
+
+    /* Special styling for WebKit/Blink */
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      border: 2px solid #fff;
+      height: 26px;
+      width: 26px;
+      border-radius: 26px;
+      background: $secondary;
+      cursor: pointer;
+      margin-top: -11px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+      box-shadow: 1px 1px 1px #fff; /* Add cool effects to your sliders! */
+    }
+
+    /* All the same stuff for Firefox */
+    &::-moz-range-thumb {
+      border: 2px solid #fff;
+      height: 26px;
+      width: 26px;
+      border-radius: 26px;
+      background: $secondary;
+      cursor: pointer;
+    }
+
+    /* All the same stuff for IE */
+    &::-ms-thumb {
+      border: 2px solid #fff;
+      height: 26px;
+      width: 26px;
+      border-radius: 26px;
+      background: $secondary;
+      cursor: pointer;
+    }
+
+
+
+    &::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 4px;
+      cursor: pointer;
+      background: $secondary-light;
+      border-radius: $border-radius;
+      border: 0.2px solid #010101;
+    }
+
+    &:focus::-webkit-slider-runnable-track {
+      background: $secondary-light;
+    }
+
+    &::-moz-range-track {
+      width: 100%;
+      height: 4px;
+      cursor: pointer;
+      background: $primary;
+      border-radius: 1.3px;
+      border: 0.2px solid #010101;
+    }
+
+    &::-ms-track {
+      width: 100%;
+      height: 4px;
+      cursor: pointer;
+      background: transparent;
+      border-color: transparent;
+      border-width: 16px 0;
+      color: transparent;
+    }
+
+    &::-ms-fill-lower {
+      background: $primary;
+      border-radius: 4px;
+    }
+
+    &:focus::-ms-fill-lower {
+      background: $primary;
+    }
+
+    &::-ms-fill-upper {
+      background: $primary;
+      border-radius: 4px;
+    }
+
+    &:focus::-ms-fill-upper {
+      background: $secondary-light;
+    }
+  }
+}

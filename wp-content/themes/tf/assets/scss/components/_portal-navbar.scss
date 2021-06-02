@@ -1,0 +1,65 @@
+// ===================================
+// assets/scss/components/_.portal-navbar.scss
+// ==================================
+
+/* Component: .portal-navbar */
+.portal-navbar {
+  background-color: $primary;
+  @include all-colors( #fff );
+  width: 266px;
+  border-radius: $border-radius-section;
+
+  // El: inner
+  &__inner {
+    @include padding( 27px 18px 15px );
+  }
+
+  // El: profile
+  &__profile {
+    @include padding( 10px 14px 14px );
+    border: 1px solid #562654;
+    border-radius: calc-rem( 10px );
+    @include margin( 15px, 'bottom' );
+    @extend %transition-base;
+
+    p {
+      @include opacity( 0.7 );
+      line-height: 1.2857;
+    }
+
+    &-avatar {
+      width: 34px;
+      height: 34px;
+    }
+
+    &-info {
+      @include margin( 10px, 'left' );
+    }
+
+    &-name {
+      @include font-size( 15px );
+      line-height: 1.2666;
+      margin: 0;
+    }
+
+    &:hover {
+      text-decoration: none;
+      background-color: #562654;
+    }
+  }
+
+  // El: logout
+  &__logout {
+    @include padding( 11px 14px );
+    @include font-size( 15px );
+    border-radius: calc-rem( 10px );
+    display: flex;
+    align-items: center;
+    @extend %transition-fast;
+
+    &:hover {
+      background-color: #562654;
+      text-decoration: none;
+    }
+  }
+}

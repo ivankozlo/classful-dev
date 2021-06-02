@@ -1,0 +1,57 @@
+// ====================================
+// assets/scss/components/_blockquote.scss
+// ====================================
+
+/* Component: blockquote */
+.quote {
+  @include font-size( 36px );
+  line-height: 1.2777;
+  @include margin( 10px, 'bottom' );
+  position: relative;
+
+  &:before {
+    // content: '“';
+    content: '';
+    @include bg-img-full( 'quote@2x.png', $size: 19px 16px );
+    @include position( $top: 10px, $right: 100%, $width: 19px, $height: 16px );
+    @include margin( 13px, 'right' );
+  }
+
+  p {
+    font-size: inherit;
+    @include margin( 30px, 'bottom' );
+  }
+
+  cite {
+    font-size: $font-size-sm;
+    font-style: normal;
+    line-height: 1.3888;
+    display: block;
+  }
+
+  &__author {
+    font-size: $font-size-md;
+    display: block;
+  }
+}
+
+.quote-2 {
+  @include padding( 18px, 'left' );
+  border-left: 1px solid $border-color;
+
+  &:before {
+    content: '';
+    width: 24px;
+    height: 18px;
+    @include bg-img-full( 'quote-primary.svg', $size: contain );
+    display: block;
+    @include margin( 4px, 'bottom' );
+  }
+
+  p {
+    font-style: $font-size-md;
+    font-weight: bold;
+    color: #8e8e8e;
+    line-height: 1.5;
+  }
+}

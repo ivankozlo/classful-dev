@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45.636" height="45.635" viewBox="0 0 45.636 45.635">
+  <g id="Group_12" data-name="Group 12" transform="translate(0 -1.001)">
+    <g id="Group_3" data-name="Group 3" transform="translate(0 0.636)">
+      <path id="Fill_1" data-name="Fill 1" d="M45.636,22.817A22.818,22.818,0,1,1,22.818,0,22.817,22.817,0,0,1,45.636,22.817" transform="translate(0 0.365)" fill="#c6e4e4"/>
+    </g>
+    <path id="Fill_4" data-name="Fill 4" d="M15.933,16.4l-3.212-2.423H2.859A2.859,2.859,0,0,1,0,11.119V2.858A2.859,2.859,0,0,1,2.859,0H14.6a2.858,2.858,0,0,1,2.858,2.858V15.64a.952.952,0,0,1-1.526.76" transform="translate(19.161 16.253)" fill="#fefefe"/>
+    <path id="Fill_6" data-name="Fill 6" d="M12.6,12.966l-2.54-1.916H2.26A2.26,2.26,0,0,1,0,8.79V2.26A2.26,2.26,0,0,1,2.26,0h9.283A2.26,2.26,0,0,1,13.8,2.26v10.1a.754.754,0,0,1-1.207.6" transform="translate(13.279 23.511)" fill="#fefefe"/>
+    <path id="Stroke_8" data-name="Stroke 8" d="M15.932,16.4,12.72,13.976H2.858A2.857,2.857,0,0,1,0,11.118V2.857A2.857,2.857,0,0,1,2.858,0H14.6a2.857,2.857,0,0,1,2.858,2.857V15.639A.953.953,0,0,1,15.932,16.4Z" transform="translate(17.03 12.857)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="Stroke_10" data-name="Stroke 10" d="M12.6,12.966l-2.54-1.916h-7.8A2.259,2.259,0,0,1,0,8.79V2.26A2.259,2.259,0,0,1,2.259,0h9.283A2.26,2.26,0,0,1,13.8,2.26v10.1A.753.753,0,0,1,12.6,12.966Z" transform="translate(11.148 20.115)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>

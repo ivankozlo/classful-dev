@@ -1,0 +1,77 @@
+// ===================================
+// assets/scss/components/_past-schools.scss
+// ==================================
+
+/* Component: past-schools */
+.feature-list {
+
+  .feature-item {
+    @include margin( 28px, 'top' );
+
+    &:first-child {
+      margin-top: 0px;
+    }
+  }
+
+  // Mod: two
+  &--two {
+    // Responsive: > Medium
+    @include bp-medium-min {
+      display: flex;
+      @include row-gutter( 20px, 'feature-item' );
+      flex-wrap: wrap;
+      align-items: flex-start;
+
+      .feature-item {
+        flex-basis: 50%;
+        width: 50%;
+        flex-grow: 1;
+        margin-top: 0;
+        @include margin( 28px, 'bottom' );
+      }
+    }
+  }
+}
+
+.feature-item {
+  display: flex;
+  flex-wrap: nowrap;
+
+  // El: image
+  &__image {
+    background-color: #f4f4f4;
+    width: 48px;
+    height: 48px;
+    display: block;
+    flex-shrink: 0;
+    border-radius: $border-radius-xl;
+  }
+
+  // El: wrap
+  &__wrap {
+    flex-grow: 1;
+    @include margin( 17px, 'left' );
+  }
+
+  // El: name
+  &__name {
+    font-size: $font-size-sm;
+    line-height: 1.375;
+    @include margin( 4px, 'bottom' );
+  }
+
+  // El: text
+  &__text {
+    font-size: $font-size-xs;
+    line-height: 1.25;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    img, span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+// ====================================
+// assets/scss/components/_dot.scss
+// ====================================
+
+/* Component: Dot */
+.dot {
+  display: inline-block;
+  vertical-align: middle;
+  @include size-rem( 6px );
+  background-color: $gray;
+  border-radius: 10px;
+
+  // Mod: Pink
+  &--pink {
+    background-color: $pink;
+  }
+
+  // Mod: Orange
+  &--orange {
+    background-color: $orange;
+  }
+
+  // Mod: Red, Danger
+  &--red,
+  &--danger {
+    background-color: $danger;
+  }
+
+  // Mod: Primary, Success
+  &--primary,
+  &--success {
+    background-color: $success;
+  }
+
+  // Mod: Green
+  &--green {
+    background-color: $green;
+  }
+
+  // Mod: Blue
+  &--blue {
+    background-color: $blue;
+  }
+
+  // Mod: Cyan
+  &--cyan {
+    background-color: $cyan;
+  }
+
+  // Mod: Gray, Light Purple
+  &--gray,
+  &--light-purple {
+    background-color: $light-purple;
+  }
+}

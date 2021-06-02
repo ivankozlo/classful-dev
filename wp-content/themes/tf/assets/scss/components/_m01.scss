@@ -1,0 +1,120 @@
+// ====================================
+// assets/scss/components/_m01.scss
+// ====================================
+
+/* Component: M01 */
+.m01 {
+  @include padding( 75px, 'bottom' );
+
+  .container-fluid {
+    position: relative;
+    @include padding( 92px, 'top' );
+    @include padding( 32px, 'bottom' );
+  }
+
+  // El: Image
+  &__image {
+    @include position( $bottom: 0, $right: 0 );
+
+    // Mod: 1
+    &--1 {
+      max-width: per-calc( 815px );
+      max-height: 100%;
+    }
+
+    // Mod: 2
+    &--2 {
+      max-width: per-calc( 765px );
+      z-index: 2;
+      max-height: calc( 100% + 10px );
+      right: - per-calc( 109px );
+    }
+  }
+
+  // El: Text Wrap
+  &__text-wrap {
+    width: per-calc( 685px );
+    position: relative;
+    z-index: 1;
+  }
+
+  // El: Form Wrap
+  &__form-wrap {
+    @include all-colors( #fff );
+    background-color: $primary;
+    @include padding( 83px 100px 86px 65px );
+    border-radius: calc-rem( 12px );
+
+    form {
+      position: relative;
+
+      @include bp-large-min {
+        // @include padding( 76px, 'right' );
+      }
+
+      input[type=search] {
+        @include padding( 25px 25px 25px 59px );
+        @include font-size( 24px );
+        border: none;
+        background: #ffffff;
+      }
+
+      [type=submit] {
+        @include position( $top: 0, $left: 0 );
+        color: $primary;
+        @include font-size( 20px );
+        @include padding( 26px 24px 26px );
+        border: none;
+      }
+    }
+  }
+
+  // El: Heading
+  &__heading {
+    @include margin( 38px, 'bottom' );
+  }
+
+  // El: Text
+  &__text {
+    @extend %last-child-no-margin;
+
+    a {
+      font-weight: bold;
+      padding-bottom: 3px;
+      border-bottom: 3px solid $reserved;
+
+      &:hover {
+        color: #ffffff;
+        text-decoration: none;
+        border-color: transparent;
+      }
+    }
+  }
+
+  // El: cta
+  &__cta {
+    font-size: $font-size-lg;
+    @include padding( 23px 25px 27px );
+    line-height: 1.25;
+    text-transform: none;
+    border-radius: calc-rem( 4px );
+    @include margin( 32px, 'bottom' );
+  }
+
+  // El: Commission
+  &__commission {
+    @include padding( 30px, 'left' );
+    max-width: 395px;
+
+    i {
+      @include font-size( 20px );
+      color: #FF7466;
+      text-shadow: 0px 0px 0px 1px #979797
+    }
+
+    p {
+      font-size: $font-size-xs;
+      @extend %last-child-no-margin;
+    }
+  }
+}

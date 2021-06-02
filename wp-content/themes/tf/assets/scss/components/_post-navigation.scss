@@ -1,0 +1,44 @@
+// ====================================
+// assets/scss/components/_post-navigation.scss
+// ====================================
+
+/* Component: Post navigation */
+.post-navigation {
+  @include margin( 25px, 'bottom' );
+
+  // Sel: back
+  &__back {
+    @extend %vertical-align;
+    text-transform: uppercase;
+    color: #000;
+    @include padding( 37px, 'left' );
+    position: relative;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    @include font-size( 14px );
+
+    &:before {
+      content: '';
+      @include bg-img-full( 'long-arrow-right-black.svg', $position: 0 center, $size: 22px 12px );
+      @include position( $top: 0, $left: 0, $width: 22px, $height: 100% );
+      transform: rotate( 180deg );
+    }
+  }
+
+  // Sel: Date
+  &__date {
+    @extend %vertical-align;
+    @include margin( 139px, 'left' );
+    margin-bottom: 0;
+    color: #B8B8B8;
+    @include font-size( 18px );
+  }
+
+  @include media( 1170px + ( $container__gutter * 2 ) ) {
+
+    // Sel: Date
+    &__date {
+      @include margin( 35px, 'left' );
+    }
+  }
+}

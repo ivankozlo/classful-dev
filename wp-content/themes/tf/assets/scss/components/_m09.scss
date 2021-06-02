@@ -1,0 +1,65 @@
+// ====================================
+// assets/scss/components/_m09.scss
+// ====================================
+
+/* Component: M09 */
+.m09 {
+  @include padding( 71px, 'top' );
+  @include padding( 167px, 'bottom' );
+
+  // El: rows
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // El: text-col
+  &__text-col {
+    line-height: 1.7;
+
+    h2 {
+      @include margin( 25px, 'bottom' );
+      line-height: 1.1923;
+    }
+
+    p {
+      @include margin( 30px, 'bottom' );
+      @extend %last-child-no-margin;
+    }
+
+    // Responsive: > Large
+    @include bp-large-min {
+      flex-basis: per-calc( 535px );
+      max-width: per-calc( 535px );
+      margin-right: 44px;
+    }
+  }
+
+  // El: image-col
+  &__image-col {
+    position: relative;
+
+    // Responsive: > Large
+    @include bp-large-min {
+      flex-basis: per-calc( 601px );
+      max-width: per-calc( 601px );
+    }
+  }
+
+  // El: image
+  &__image {
+    padding-bottom: aspect-ratio( 601px 552px );
+    border-radius: calc-rem( 12px );
+  }
+
+  // El: image-shape
+  &__image-shape {
+    position: absolute;
+    user-select: none;
+    bottom: -124px;
+    left: 0;
+    z-index: 2;
+    transform: rotate(7deg);
+  }
+}

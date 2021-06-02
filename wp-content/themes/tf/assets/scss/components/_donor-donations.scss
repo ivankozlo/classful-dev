@@ -1,0 +1,68 @@
+// ===================================
+// assets/scss/components/_donor-donations.scss
+// ==================================
+
+/* Component: donor-donations */
+.donor-donations {
+
+  .donor-donation {
+    @include margin( 30px, 'top' );
+
+    &:first-child {
+      margin-top: 0px;
+    }
+  }
+}
+
+.donor-donation {
+
+  // El: inner
+  &__inner {
+    @include padding( 30px 35px 28px );
+    border: 1px solid $border-color;
+    border-radius: $border-radius-section;
+  }
+
+  // El: header
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @include margin( 20px, 'bottom' );
+
+    // Responsive: < Large
+    @include bp-large {
+      flex-direction: column;
+      justify-content: center;
+      @include margin( 30px, 'bottom' );
+    }
+  }
+
+  // El: profile
+  &__profile {
+
+    // Responsive: < Large
+    @include bp-large {
+      @include margin( 25px, 'bottom' );
+    }
+  }
+
+  // El: goal
+  &__goal {
+    width: 325px;
+    max-width: 100%;
+  }
+
+  // El: image
+  &__image {
+    height: 30px;
+    width: 30px;
+  }
+
+  // El: text
+  &__text {
+    font-size: $font-size-xxs;
+    margin: 0 0 0 calc-rem( 12px );
+  }
+}

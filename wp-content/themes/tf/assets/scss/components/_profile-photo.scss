@@ -1,0 +1,50 @@
+// ===================================
+// assets/scss/components/_profile-photo.scss
+// ==================================
+
+/* Component: profile-photo */
+.profile-photo {
+  width: 140px;
+  background-color: $white;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  position: relative;
+  @include margin( 30px, 'bottom' );
+
+  // El: img-label
+  &__img-label {
+    left: 50%;
+    bottom: -15px;
+    transform: translateX( -50% );
+    @include padding( 14px, 'right' );
+  }
+
+  // El: image-cont
+  &__image-cont {
+    height: 0;
+    padding-bottom: aspect-ratio( 225px 250px );
+    border-radius: $border-radius;
+    display: block;
+  }
+
+  .floating-label {
+    @include padding( 3px 11px 4px 22px );
+    bottom: -11px;
+
+    &--tf-icon {
+      background-size: 10px auto;
+    }
+  }
+
+  // Mod: teacher
+  &--teacher {
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 0px 4px $secondary;
+    border-radius: $border-radius-section;
+
+    .floating-label--tf-icon {
+      @include bg-img-only( 'icons/tf-icon-green.svg' );
+    }
+  }
+}

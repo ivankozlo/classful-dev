@@ -1,0 +1,49 @@
+// ===================================
+// assets/scss/components/_list-filter.scss
+// ===================================
+
+.list-filter {
+  @include margin( -12px, 'left' );
+  @include margin( -12px, 'right' );
+
+  // Dropdown Toggle
+  .dropdown-toggle {
+    color: $dark;
+    @include padding( 12px );
+
+    &:after {
+      color: $gray-400;
+      vertical-align: middle;
+      @include margin( -2px, 'top' );
+    }
+
+    span.list-filter__sep {
+      @include opacity( 0.2 );
+      @include margin( 2px, 'left' );
+      @include margin( 2px, 'right' );
+    }
+
+    span.list-filter__selection {
+      color: $primary;
+      font-weight: bold;
+    }
+
+    @include bs-button-hover {
+      &, &:focus {
+        color: $dark;
+        text-decoration: none;
+        background-color: $gray-200;
+      }
+    }
+
+    // Dropdown Menu
+    &-menu {
+      margin: 0;
+    }
+
+  }
+
+  &.show > .btn-link.dropdown-toggle {
+    color: $dark;
+  }
+}

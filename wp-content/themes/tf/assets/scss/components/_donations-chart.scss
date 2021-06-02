@@ -1,0 +1,10 @@
+// ===================================
+// assets/scss/components/_donations-chart.scss
+// ==================================
+
+/* Component: donations-chart */
+.donations-chart {
+  border: 1px solid $border-color;
+  @include padding( 14px 55px 24px 20px );
+  border-radius: $border-radius-section;
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320">
+  <g id="Group_3" data-name="Group 3" transform="translate(-579 -91)">
+    <g id="Oval_2" data-name="Oval 2">
+      <circle id="Oval_2-2" data-name="Oval 2" cx="160" cy="160" r="160" transform="translate(579 91)" fill="rgba(15,195,178,0.2)"/>
+      <circle id="Oval_2-3" data-name="Oval 2" cx="160" cy="160" r="160" transform="translate(579 91)" fill="none"/>
+    </g>
+    <g id="Oval_2-4" data-name="Oval 2">
+      <circle id="Oval_2-5" data-name="Oval 2" cx="33.5" cy="33.5" r="33.5" transform="translate(705 217)" fill="#00676b" stroke="#fff" stroke-miterlimit="10" stroke-width="5"/>
+      <circle id="Oval_2-6" data-name="Oval 2" cx="33.5" cy="33.5" r="33.5" transform="translate(705 217)" fill="none"/>
+    </g>
+    <g id="Oval" transform="translate(738.728 237) rotate(45)" fill="none" stroke-miterlimit="10">
+      <path d="M9,18h7a2,2,0,0,0,2-2V9a9,9,0,1,0-9,9Z" stroke="none"/>
+      <path d="M 14 14 L 14 9 C 14 6.242987632751465 11.75701236724854 4 9 4 C 6.242987632751465 4 4 6.242987632751465 4 9 C 4 11.75701236724854 6.242987632751465 14 9 14 L 14 14 M 16 18 L 9 18 C 4.02943754196167 18 0 13.97056293487549 0 9 C 0 4.02943754196167 4.02943754196167 0 9 0 C 13.97056293487549 0 18 4.02943754196167 18 9 L 18 16 C 18 17.10457420349121 17.10457420349121 18 16 18 Z" stroke="none" fill="#fff"/>
+    </g>
+  </g>
+</svg>

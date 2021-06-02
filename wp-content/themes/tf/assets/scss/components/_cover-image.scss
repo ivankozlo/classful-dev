@@ -1,0 +1,19 @@
+// ====================================
+// assets/scss/components/_cover-image.scss
+// ====================================
+
+/* Component: Cover Image */
+.cover-image {
+  background: transparent no-repeat 50% 50%;
+  background-size: cover;
+  height: 0;
+
+  img {
+    @extend %visually-hidden;
+  }
+
+  // Mod: contain
+  &--contain {
+    background-size: contain;
+  }
+}

@@ -1,0 +1,29 @@
+// ==================================
+// SCSS/STATE/_MEDIUM.SCSS
+// ==================================
+
+// Above 768
+@include bp-medium-min {
+
+}
+
+// Below 767
+@include bp-medium {
+
+  .section {
+
+    &:before,
+    &:after {
+      width: 50px; height: 110px;
+      background-size: 50px auto;
+    }
+
+    &:before {
+      margin-right: -25px;
+    }
+
+    &:after {
+      margin-left: -25px;
+    }
+  }
+}

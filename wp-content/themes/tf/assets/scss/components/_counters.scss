@@ -1,0 +1,45 @@
+// ====================================
+// assets/scss/components/_counters.scss
+// ====================================
+
+/* Component: counters */
+.counters {
+  display: flex;
+  justify-content: center;
+  margin-left: -22px;
+  margin-right: -22px;
+
+  // El: item
+  &__item {
+    padding-left: 22px;
+    padding-right: 22px;
+
+    // Responsive: > Medium
+    @include bp-medium-min {
+      flex-basis: per-calc( 344px, 1032px );
+      width: per-calc( 344px, 1032px );
+    }
+  }
+
+  // El: number-wrap
+  &__number-wrap {
+    @include font-size( 80px );
+    font-weight: $font-weight-bold;
+    line-height: 0.775;
+    @include margin( 23px, 'bottom' );
+  }
+
+  // El: number
+  &__number {
+  }
+
+  // El: suffix
+  &__suffix {
+
+  }
+
+  // El: text
+  &__text {
+    font-size: $font-size-lg;
+  }
+}

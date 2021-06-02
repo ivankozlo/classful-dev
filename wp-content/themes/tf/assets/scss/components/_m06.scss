@@ -1,0 +1,60 @@
+// ====================================
+// assets/scss/components/_m06.scss
+// ====================================
+
+/* Component: M06 */
+.m06 {
+  @include padding( 140px, 'top' );
+  @include padding( 128px, 'bottom' );
+
+  // El: sub-heading
+  &__sub-heading {
+    margin-bottom: 0;
+  }
+
+  // El: heading
+  &__heading {
+    @include margin( 10px, 'bottom' );
+    line-height: 1.2692;
+    @include margin( 55px, 'bottom' );
+  }
+
+  // El: form
+  &__form {
+    @include center-with-width( 680px );
+
+    input {
+      font-size: $font-size-lg;
+      line-height: 1.25;
+      @include padding( 22px 30px );
+      background-color: $gray;
+      text-align: center;
+      border-color: transparent;
+
+      @include placeholder {
+        color: rgba( #293A37, 0.6 );
+      }
+
+      &:focus {
+        background-color: $gray;
+      }
+    }
+  }
+
+  + .m07 {
+    position: relative;
+    padding-top: 0;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 1199px;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: $border-color;
+      height: 1px;
+      @include margin( 51px, 'bottom' );
+    }
+  }
+}

@@ -1,0 +1,27 @@
+// ===================================
+// assets/scss/components/_profile-gallery.scss
+// ==================================
+
+/* Component: profile-gallery */
+.profile-gallery {
+
+  .row {
+    @include row-gutter( 20px );
+
+    .row + .row {
+      @include margin( 20px, 'top' );
+    }
+  }
+
+  // El: heading
+  &__heading {
+    @include margin( 34px, 'bottom' );
+  }
+
+  // El: image
+  &__image {
+    padding-bottom: aspect-ratio( 380px 360px );
+    border-radius: $border-radius-lg;
+    display: block;
+  }
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="10px" viewBox="0 0 14 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>checkbox-tick</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Promote---email" transform="translate(-1265.000000, -313.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-30" transform="translate(335.000000, 100.000000)">
+                <g id="Group-28-Copy-4" transform="translate(35.000000, 180.000000)">
+                    <g id="Group-33" transform="translate(890.000000, 26.000000)">
+                        <g id="Group-31">
+                            <path d="M6.70710678,11.3571283 C6.31658249,10.966604 5.68341751,10.966604 5.29289322,11.3571283 C4.90236893,11.7476526 4.90236893,12.3808176 5.29289322,12.7713419 L9.19108496,16.6695336 C9.5792155,17.0576642 10.2076535,17.0603905 10.5991369,16.675642 L18.7009452,8.71321515 C19.094843,8.32609382 19.1003365,7.69295267 18.7132152,7.29905482 C18.3260938,6.90515697 17.6929527,6.89966351 17.2990548,7.28678485 L9.90430034,14.5543219 L6.70710678,11.3571283 Z" id="checkbox-tick"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

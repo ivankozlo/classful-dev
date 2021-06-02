@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>messages-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="messages-icon" transform="translate(1.000000, 1.000000)">
+            <rect id="Rectangle-18" fill="#436B9E" fill-rule="nonzero" x="4" y="4" width="11" height="2" rx="1"></rect>
+            <rect id="Rectangle-18-Copy" fill="#436B9E" fill-rule="nonzero" x="4" y="9" width="11" height="2" rx="1"></rect>
+            <path d="M1,0 L18,0 C18.5522847,-1.01453063e-16 19,0.44771525 19,1 L19,18.020752 L16.3743955,15.3049349 C16.1859819,15.1100475 15.9265222,15 15.6554488,15 L1,15 C0.44771525,15 6.76353751e-17,14.5522847 0,14 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z" id="Rectangle-27" stroke="#436B9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

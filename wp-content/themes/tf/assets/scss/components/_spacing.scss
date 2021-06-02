@@ -1,0 +1,57 @@
+// =================================================
+// assets/scss/components/_spacing.scss
+// =================================================
+
+/* Component: Spacing */
+// Padding
+.pan {padding: 0 !important; }
+
+.ptn {padding-top: 0 !important; }
+.pts {padding-top: 10px !important; }
+.ptm {padding-top: 20px !important; }
+.ptl {padding-top: 30px !important; }
+
+.pbn {padding-bottom: 0 !important; }
+.pbs {padding-bottom: 10px !important; }
+.pbm {padding-bottom: 20px !important; }
+.pbl {padding-bottom: 30px !important; }
+
+@include bp-medium {
+  .pa-md-n {padding: 0 !important; }
+
+  .pt-md-n {padding-top: 0 !important; }
+  .pt-md-s {padding-top: 10px !important; }
+  .pt-md-m {padding-top: 20px !important; }
+  .pt-md-l {padding-top: 30px !important; }
+
+  .pb-md-n {padding-bottom: 0 !important; }
+  .pb-md-s {padding-bottom: 10px !important; }
+  .pb-md-m {padding-bottom: 20px !important; }
+  .pb-md-l {padding-bottom: 30px !important; }
+}
+
+// Margin
+.man {margin: 0 !important; }
+
+.mtn {margin-top: 0 !important; }
+.mts {margin-top: 10px !important; }
+.mtm {margin-top: 20px !important; }
+.mtl {margin-top: 30px !important; }
+
+.mbn {margin-bottom: 0 !important; }
+.mbs {margin-bottom: 10px !important; }
+.mbm {margin-bottom: 20px !important; }
+.mbl {margin-bottom: 30px !important; }
+
+@include bp-medium {
+  .ma-md-n {margin: 0 !important; }
+  .mt-md-n {margin-top: 0 !important; }
+  .mt-md-s {margin-top: 10px !important; }
+  .mt-md-m {margin-top: 20px !important; }
+  .mt-md-l {margin-top: 30px !important; }
+
+  .mb-md-n {margin-bottom: 0 !important; }
+  .mb-md-s {margin-bottom: 10px !important; }
+  .mb-md-m {margin-bottom: 20px !important; }
+  .mb-md-l {margin-bottom: 30px !important; }
+}

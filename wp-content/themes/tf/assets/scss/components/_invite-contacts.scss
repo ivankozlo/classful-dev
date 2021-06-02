@@ -1,0 +1,53 @@
+// ===================================
+// assets/scss/components/_invite-contacts.scss
+// ==================================
+
+/* Component: invite-contacts */
+.invite-contacts {
+
+  .invite-contact {
+
+    &:nth-child(2n+1) {
+      background-color: $gray;
+    }
+  }
+}
+
+.invite-contact {
+  border-radius: $border-radius-lg;
+  @include padding( 16px 23px 20px 26px );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  // El: left
+  &__left {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  // El: avatar
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 18px;
+
+    // Mod: initials
+    &--initials {
+      background-color: $primary;
+      color: #ffffff;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      @include font-size( 16px );
+    }
+  }
+
+  // El: info
+  &__info {
+
+  }
+}

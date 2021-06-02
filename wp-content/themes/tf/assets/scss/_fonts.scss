@@ -1,0 +1,95 @@
+// ===================================
+// assets/scss/_fonts.scss
+// ===================================
+//
+// All fonts are imported here.
+// ==================================
+
+
+$path--font  : '../fonts';
+
+// MarkPro: 400
+@font-face {
+  font-family: "MarkPro";
+  src: url("#{$path--font}/MarkPro/MarkPro.woff2") format("woff2"),
+      url("#{$path--font}/MarkPro/MarkPro.woff") format("woff"),
+      url("#{$path--font}/MarkPro/MarkPro.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+// MarkPro: 500
+@font-face {
+  font-family: "MarkPro";
+  src: url("#{$path--font}/MarkPro/MarkPro-Medium.woff2") format("woff2"),
+      url("#{$path--font}/MarkPro/MarkPro-Medium.woff") format("woff"),
+      url("#{$path--font}/MarkPro/MarkPro-Medium.otf") format("opentype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "MarkPro";
+  src: url("#{$path--font}/MarkPro/MarkPro-Medium-italic.woff2") format("woff2"),
+      url("#{$path--font}/MarkPro/MarkPro-Medium-italic.woff") format("woff"),
+      url("#{$path--font}/MarkPro/MarkPro-Medium-italic.otf") format("opentype");
+  font-style: italic;
+  font-weight: 500;
+}
+
+// MarkPro: 700
+@font-face {
+  font-family: "MarkPro";
+  src: url("#{$path--font}/MarkPro/MarkPro-Bold.woff2") format("woff2"),
+      url("#{$path--font}/MarkPro/MarkPro-Bold.woff") format("woff"),
+      url("#{$path--font}/MarkPro/MarkPro-Bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "MarkPro";
+  src: url("#{$path--font}/MarkPro/MarkPro-Bold-italic.woff2") format("woff2"),
+      url("#{$path--font}/MarkPro/MarkPro-Bold-italic.woff") format("woff"),
+      url("#{$path--font}/MarkPro/MarkPro-Bold-italic.otf") format("opentype");
+  font-style: italic;
+  font-weight: 700;
+}
+
+// MarkPro: 800
+@font-face {
+  font-family: "MarkPro";
+  src: url("#{$path--font}/MarkPro/MarkPro-Heavy.woff2") format("woff2"),
+      url("#{$path--font}/MarkPro/MarkPro-Heavy.woff") format("woff"),
+      url("#{$path--font}/MarkPro/MarkPro-Heavy.otf") format("opentype");
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "MarkPro";
+  src: url("#{$path--font}/MarkPro/MarkPro-Heavy-italic.woff2") format("woff2"),
+      url("#{$path--font}/MarkPro/MarkPro-Heavy-italic.woff") format("woff"),
+      url("#{$path--font}/MarkPro/MarkPro-Heavy-italic.otf") format("opentype");
+  font-style: italic;
+  font-weight: 800;
+}
+
+// MarkPro: 900
+@font-face {
+  font-family: "MarkPro";
+  src: url("#{$path--font}/MarkPro/MarkPro-Black.woff2") format("woff2"),
+      url("#{$path--font}/MarkPro/MarkPro-Black.woff") format("woff"),
+      url("#{$path--font}/MarkPro/MarkPro-Black.otf") format("opentype");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "MarkPro";
+  src: url("#{$path--font}/MarkPro/MarkPro-Black-italic.woff2") format("woff2"),
+      url("#{$path--font}/MarkPro/MarkPro-Black-italic.woff") format("woff"),
+      url("#{$path--font}/MarkPro/MarkPro-Black-italic.otf") format("opentype");
+  font-style: italic;
+  font-weight: 900;
+}

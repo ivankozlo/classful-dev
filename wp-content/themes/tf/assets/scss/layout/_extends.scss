@@ -1,0 +1,135 @@
+// =================================================
+// assets/scss/layout/_extends.scss
+// =================================================
+
+
+// Clearfix
+// ==================================
+
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Positioned Absolute Fullwidth
+// ==================================
+
+%position-fullscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// Rounded
+// ==================================
+
+%rounded {
+  border-radius: 50em;
+  overflow: hidden;
+}
+
+// Transition
+// ==================================
+
+%transition-base {
+  @include transition( $transition--base );
+}
+
+%transition-fast {
+  @include transition( $transition--fast );
+}
+
+%transition-slow {
+  @include transition( $transition--slow );
+}
+
+// Rows
+// ==================================
+
+%row-margin {
+  margin-left: -$container__gutter;
+  margin-right: -$container__gutter;
+}
+
+%row-padding {
+  padding-left: $container__gutter;
+  padding-left: $container__gutter;
+}
+
+// Visual Hidden
+// ==================================
+
+%visually-hidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+// Vertical Align
+// ==================================
+
+%vertical-align {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+// Input Focus Outline
+// ==================================
+
+%input-focus-outline {
+  outline: none;
+  border-color: $primary;
+  box-shadow: 0px 0px 5px rgba( $primary, 0.2 );
+}
+
+%input-focus-outline-error {
+  outline: none;
+  border-color: $danger;
+  box-shadow: 0px 0px 5px rgba( $danger, 0.2 );
+}
+
+// Primary Gradient
+// ==================================
+
+%primary-gradient {
+  @include primary-gradient;
+}
+
+// Border Radius Base
+// ==================================
+
+%radius-base {
+  @include border-top-radius( $border-radius--base );
+  @include border-right-radius( $border-radius--base );
+  @include border-bottom-radius( $border-radius--base );
+  @include border-left-radius( $border-radius--base );
+}
+
+// Truncate line
+// ==================================
+
+%truncate-line {
+  @include truncate-line;
+}
+
+// Last Child No Margin
+// ==================================
+
+%last-child-no-margin {
+  > :last-child {
+    margin-bottom: 0;
+  }
+}

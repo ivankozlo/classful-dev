@@ -1,0 +1,21 @@
+// ====================================
+// assets/scss/components/_funded-card.scss
+// ====================================
+
+/* Component: funded-card */
+.funded-card {
+  position: relative;
+
+  // El: image
+  &__image {
+    padding-bottom: aspect-ratio( 425px 460px );
+    border-radius: $border-radius-xl;
+  }
+
+  // El: goal
+  &__goal {
+    bottom: 15px;
+    left: 8px;
+    @include padding( 11px, 'right' );
+  }
+}

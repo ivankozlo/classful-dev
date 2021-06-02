@@ -1,0 +1,60 @@
+// ===================================
+// assets/scss/components/_.portal-nav.scss
+// ==================================
+
+/* Component: .portal-nav */
+.portal-nav {
+  @include margin( 183px, 'bottom' );
+
+  li {
+    @include margin( 8px, 'top' );
+    letter-spacing: 0.5px;
+
+    &:first-child {
+      margin-top: 0px;
+    }
+
+    a {
+      @include padding( 11px 14px );
+      @include font-size( 15px );
+      border-radius: calc-rem( 10px );
+      display: flex;
+      align-items: center;
+      @extend %transition-fast;
+    }
+
+    &.active a,
+    &.current-menu-item a {
+      font-weight: bold;
+    }
+
+    &.active a,
+    &.current-menu-item a,
+    a:hover {
+      background-color: #562654;
+
+      .portal-nav__icon {
+        background-color: #fff;
+        color: $primary;
+      }
+    }
+  }
+
+  // El: icon
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    background-color: #562654;
+    border-radius: 50em;
+    @include margin( 7px, 'right' );
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    @extend %transition-fast;
+  }
+}

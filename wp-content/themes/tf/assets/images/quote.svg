@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="16px" viewBox="0 0 19 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>quote</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M3.552,30.312 C3.552,26.408 5.792,22.76 8.736,20.712 L11.104,22.632 C9.056,23.976 7.264,26.536 7.008,28.584 C7.072,28.584 7.52,28.456 7.84,28.456 C9.632,28.456 10.976,29.864 10.976,31.72 C10.976,33.64 9.44,35.176 7.52,35.176 C5.408,35.176 3.552,33.448 3.552,30.312 Z M13.792,30.312 C13.792,26.408 16.032,22.76 18.976,20.712 L21.344,22.632 C19.296,23.976 17.504,26.536 17.248,28.584 C17.376,28.584 17.824,28.456 18.08,28.456 C19.872,28.456 21.216,29.864 21.216,31.72 C21.216,33.64 19.68,35.176 17.76,35.176 C15.648,35.176 13.792,33.448 13.792,30.312 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="quote" transform="translate(-3.000000, -20.000000)" fill-rule="nonzero">
+            <g id="“">
+                <use fill="#000000" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

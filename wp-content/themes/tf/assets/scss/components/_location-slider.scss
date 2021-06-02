@@ -1,0 +1,46 @@
+// ====================================
+// assets/scss/components/_location-slider.scss
+// ====================================
+
+/* Component: Location Slider */
+.location-slider {
+
+  > .location-slide {
+    width: 50%;
+    float: left;
+  }
+}
+
+.location-slide {
+  // width: 50%;
+  // float: left;
+
+  // El: Inner
+  &__inner {
+    text-align: center;
+    position: relative;
+    @include padding( 200px 50px );
+  }
+
+  // El: Heading
+  &__heading {
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  // El: Coming soon
+  &__soon {
+    @include position( $top: 50%, $left: 50%, $width: 132px, $height: 132px );
+    background-color: $cyan;
+    border-radius: 50em;
+    color: $primary !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include padding( 10px );
+    text-transform: uppercase;
+    line-height: .866666667;
+    margin-top: -66px;
+    margin-left: -66px;
+  }
+}

@@ -1,0 +1,9 @@
+  //‘ =================================================
+// assets/scss/layout/_content.scss
+// =================================================
+
+/* Main: Content */
+.content-area {
+  @include padding( 47px, 'top' );
+  @include padding( 47px, 'bottom' );
+}

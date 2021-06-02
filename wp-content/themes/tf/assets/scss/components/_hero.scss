@@ -1,0 +1,106 @@
+// ====================================
+// assets/scss/components/_homepage-hero.scss
+// ====================================
+
+/* Component: Homepage Hero */
+.hero {
+  line-height: 1.5714;
+  @include padding( 120px 0 );
+
+  // Sel: Text
+  &__text {
+    text-transform: uppercase;
+    @include font-size( 23px );
+    line-height: 1.565217391;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: $font__family--sans-serif-alt;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  // Sel: Heading
+  &__heading {
+    @include margin( 20px, 'bottom' );
+    @include margin( 60px, 'bottom' );
+  }
+
+  // Sel: CTA
+  &__cta {
+
+  }
+
+  // Mod: Home
+  &--home {
+    background-position: right center;
+    background-size: auto;
+
+    @include bp-large {
+      background-size: 50% auto;
+    }
+
+    @include bp-medium {
+      background-image: none !important;
+      text-align: center;
+    }
+
+    .hero__text {
+
+      @include bp-large-min {
+        @include padding( 45px, 'left' );
+      }
+
+      @include bp-medium-min {
+        @include padding( 180px, 'right' );
+      }
+    }
+  }
+
+  // Mod: Post
+  &--post {
+    @include padding( 89px 0 );
+
+    .hero__text {
+      @include font-size( 34px );
+      line-height: 1.617647059;
+      font-weight: bold;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+  }
+
+  // Mod: Locations
+  &--locations {
+    padding: 0;
+    height: 339px;
+  }
+
+  // Mod: 404
+  &--404 {
+    @include padding( 153px 0px );
+
+    @include bp-medium {
+      @include padding( 110px 0px );
+    }
+
+    .hero__heading {
+      @include margin( 20px, 'bottom' );
+    }
+
+    .hero__desc {
+      @include margin( 30px, 'bottom' );
+    }
+
+    .section__bg-overlay {
+      @include bg-img-only( '404-text.png' );
+      background-repeat: no-repeat;
+      background-size: auto 85%;
+      background-position: center center;
+
+      @include bp-medium {
+        background-size: 100% auto;
+        background-position: center 20px;
+      }
+    }
+  }
+}

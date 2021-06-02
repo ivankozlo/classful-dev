@@ -1,0 +1,88 @@
+// ====================================
+// assets/scss/components/_listings.scss
+// ====================================
+
+/* Component: Listings */
+.listings {
+
+  .listing:nth-child(2n+2) {
+
+    .listing__gallery {
+      float: right;
+      order: 2;
+    }
+  }
+}
+
+.listing {
+
+  // El: Images
+  &__images {
+
+  }
+
+  // El: Text
+  &__text {
+    @include font-size( 18px );
+    line-height: 1.333333;
+  }
+
+  // El: Text Inner
+  &__text-inner {
+    @include padding( 125px 112px );
+  }
+
+  // El: Heading
+  &__heading {
+
+  }
+
+  // El: Meta
+  &__meta {
+    color: $primary;
+    font-weight: $font__weight--semi-bold;
+
+    span {
+      @extend %vertical-align;
+
+      &:before {
+        content: '• ';
+        color: $secondary;
+      }
+
+      &:first-child:before {
+        display: none;
+      }
+    }
+  }
+
+  // El: Content
+  &__content {
+    font-weight: normal;
+    @include margin( 50px, 'bottom' );
+  }
+
+  // El: Actions
+  &__actions {
+
+    a {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  // El: Book Now
+  &__book-now {
+    @include margin( 41px, 'right' );
+  }
+
+  // El: Tour Link
+  &__tour-link {
+    font-weight: normal;
+
+    i {
+      @include font-size( 14px );
+      @include margin( 8px, 'left' );
+    }
+  }
+}

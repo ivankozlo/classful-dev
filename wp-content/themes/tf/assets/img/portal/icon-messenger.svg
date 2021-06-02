@@ -1,0 +1,18 @@
+<svg id="Group_6" data-name="Group 6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30.407" viewBox="0 0 30 30.407">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Clip_2" data-name="Clip 2" d="M15,0C6.716,0,0,6.351,0,14.186H0A13.87,13.87,0,0,0,5.43,25.109h0v5.3l5.107-2.675A15.783,15.783,0,0,0,15,28.371h0c8.284,0,15-6.351,15-14.186h0C30,6.351,23.284,0,15,0Z" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" y1="-0.004" x2="0.5" y2="1.036" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#02c6ff"/>
+      <stop offset="1" stop-color="#0270ff"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_3" data-name="Group 3">
+    <path id="Clip_2-2" data-name="Clip 2" d="M15,0C6.716,0,0,6.351,0,14.186H0A13.87,13.87,0,0,0,5.43,25.109h0v5.3l5.107-2.675A15.783,15.783,0,0,0,15,28.371h0c8.284,0,15-6.351,15-14.186h0C30,6.351,23.284,0,15,0Z" fill="none"/>
+    <g id="Group_3-2" data-name="Group 3" clip-path="url(#clip-path)">
+      <path id="Fill_1" data-name="Fill 1" d="M15,0C6.716,0,0,6.351,0,14.186H0A13.87,13.87,0,0,0,5.43,25.109h0v5.3l5.107-2.675A15.783,15.783,0,0,0,15,28.371h0c8.284,0,15-6.351,15-14.186h0C30,6.351,23.284,0,15,0Z" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+  <path id="Fill_4" data-name="Fill 4" d="M0,8.824,7.6,4.751l3.937,4.208L19.683,0l-7.6,4.072L8.145.136Z" transform="translate(5.023 10.181)" fill="#fff"/>
+</svg>

@@ -1,0 +1,21 @@
+// =================================================
+// assets/scss/components/_lists.scss
+// =================================================
+
+/* Component: Lists */
+.list {
+  &--unstyled {
+    list-style: none;
+    margin: 0 0 15px;
+  }
+
+  &--inline {
+    display: inline-block;
+
+    li {
+      display: inline-block;
+      list-style: none;
+      margin-right: 10px;
+    }
+  }
+}

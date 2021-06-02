@@ -1,0 +1,31 @@
+// =================================================
+// assets/scss/components/_backgrounds.scss
+// =================================================
+
+/* Component: Backgrounds */
+.bg-image,
+.bg-dark {
+  background-color: $color__background--dark;
+}
+
+.bg-image {
+  background: transparent no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.bg-primary {
+  background-color: $primary;
+  color: #fff;
+}
+
+.bg-gray {
+  background-color: #eee;
+}
+
+.bg-primary, .bg-dark {
+  @include all-colors( #fff );
+}
+
+.bg-border {
+  background-color: $border-color;
+}

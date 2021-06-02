@@ -1,0 +1,25 @@
+// ===================================
+// assets/scss/components/_promote-email.scss
+// ==================================
+
+/* Component: promote-email */
+.promote-email {
+  @include padding( 26px 41px 113px 30px );
+
+  // El: header
+  &__header {
+    // border-bottom: 1px solid rgba( #D8D8D8, 0.2 );
+    // @include padding( 23px, 'bottom' );
+  }
+
+  // El: header-left
+  &__header-right {
+    width: 60%;
+  }
+
+  // El: header-left
+  &__header-left {
+    width: 40%;
+    padding-right: 10px;
+  }
+}

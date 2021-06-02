@@ -1,0 +1,30 @@
+// ===================================
+// assets/scss/components/_container.scss
+// ===================================
+
+/* Component: Container */
+.container-fluid {
+  // max-width: $container__width;
+  @include bp-medium-min {
+    padding-left: $container__gutter;
+    padding-right: $container__gutter;
+  }
+
+  &--max {
+    max-width: $container__width + ( $container__gutter * 2 );
+  }
+
+  &--max-md {
+    max-width: $container__width--md + ( $container__gutter * 2 );
+  }
+
+  &--max-lg {
+    max-width: $container__width--lg + ( $container__gutter * 2 );
+  }
+}
+
+.container-desktop {
+  // padding-left: 40px;
+  // padding-right: 40px;
+  border-radius: calc-rem( $border-radius-section );
+}

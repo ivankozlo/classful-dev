@@ -1,0 +1,270 @@
+// ====================================
+// assets/scss/components/_common.scss
+// ====================================
+
+// Common Styling
+
+// Backgrounds
+.text-gray {
+  color: #A8B0BF !important;
+}
+
+//
+// Text Colors
+//
+
+.text {
+
+  // Primary
+  &-primary {
+    color: $primary;
+  }
+
+  // Primary Light
+  &-primary-light {
+    color: $primary-light;
+  }
+
+  // Secondary
+  &-secondary {
+    color: $secondary;
+  }
+
+  // Secondary Light
+  &-secondary-light {
+    color: $secondary-light;
+  }
+
+  // Danger
+  &-danger {
+    color: $danger;
+  }
+
+  // Success
+  &-success {
+    color: $success;
+  }
+
+  // Pink
+  &-pink {
+    color: $pink;
+  }
+
+  // Color light
+  &-color-light {
+    color: $text-color-light;
+  }
+
+  // Inherit color
+  &-color-inherit {
+    color: inherit !important;
+  }
+}
+
+//
+// Background Colors
+//
+.bg {
+
+  // Grey
+  &-grey {
+    background-color: #ECEBF3 !important;
+  }
+
+  // Primary
+  &-primary {
+    background-color: $primary;
+  }
+
+  // Secondary
+  &-secondary {
+    background-color: $secondary;
+  }
+
+  // Secondary Light
+  &-secondary-light {
+    background-color: $secondary-light;
+  }
+
+  // Danger
+  &-danger {
+    background-color: $danger;
+  }
+
+  // Success
+  &-success {
+    background-color: $success;
+  }
+
+  // Light
+  &-light {
+    background-color: $color__light;
+  }
+}
+
+// Blur
+.blur {
+  -webkit-filter: blur( 13px ); /* Chrome, Safari, Opera */
+  filter: blur( 13px );
+  // transition: 0.25s all linear;
+}
+
+.blurring {
+  // @include transition( $transition--base );
+}
+
+// Text Muted
+.text-light {
+
+}
+
+// Text Dark
+.text-dark {
+
+}
+
+// Flexbox
+.flex-shrink-0 {
+  flex-shrink: 0 !important;
+}
+
+.flex-shrink-1 {
+  flex-shrink: 1 !important;
+}
+
+// Rounded
+.rounded-large {
+  border-radius: $border-radius * 2 !important;
+}
+
+// Opacity
+.op-6 {
+  @include opacity( .6 )
+}
+
+.op-5 {
+  @include opacity( .5 )
+}
+
+// Index
+.index-1 {
+  z-index: 1;
+}
+
+.index-10 {
+  z-index: 10;
+}
+
+// Fancybox
+.fancybox-container {
+
+  // Horizontal thumbnails.
+  .fancybox-thumbs-x {
+    text-align: center;
+    top: auto; width: auto; bottom: 0; left: 0; right: 0; height: 95px; padding: 5px 10px; -webkit-box-sizing: border-box; box-sizing: border-box; background: rgba(0, 0, 0, 0.3);
+
+    .fancybox-thumbs__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+
+      a {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 3px;
+        margin-right: 3px;
+
+        &::before {
+          border: 3px solid $primary;
+        }
+      }
+    }
+
+    &::-webkit-scrollbar {
+      height: 7px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #2a2a2a;
+      border-radius: 10px;
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 10px;
+    }
+  }
+
+  &.fancybox-show-thumbs .fancybox-inner {
+    right: 0;
+    bottom: 95px;
+    overflow: visible;
+  }
+}
+
+// Border Radius
+.rounded {
+
+  &-section {
+    border-radius: $border-radius-section;
+  }
+}
+
+// Border
+.border-default {
+  border: 1px solid $border-color;
+}
+
+// Mod: With broder
+.icon-with-border {
+  width: 42px;
+  height: 42px;
+  display: inline-block;
+  line-height: normal;
+  border-radius: 42px;
+  border: 2px solid #E8E6E8;
+  line-height: 38px;
+  text-align: center;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  .icon {
+    color: $body-color;
+  }
+
+  .icon-facebook {
+    font-size: 18px;
+  }
+
+  .icon-twitter {
+    font-size: 13px;
+  }
+
+  // Mod: grayed
+  &--grayed {
+
+    .icon {
+      color: #C8C8C8;
+    }
+  }
+
+  &--verified {
+    position: relative;
+
+    &:before {
+      content: '\e927';
+      @include position( $top: -1px, $right: -5px, $width: 14px, $height: 14px );
+      background-color: #6bd37e;
+      border-radius: 50em;
+      font-family: 'tf-icons' !important;
+      color: #ffffff;
+      @include font-size( 4px );
+      line-height: 14px;
+    }
+  }
+}

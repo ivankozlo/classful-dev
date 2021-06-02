@@ -1,0 +1,33 @@
+// ===================================
+// assets/scss/components/_info-map.scss
+// ==================================
+
+/* Component: info-map */
+.info-map {
+  position: relative;
+  @include padding( 47px 35px 53px );
+
+  // El: map
+  &__map {
+    position: absolute !important;
+    @include position( $position: null, $top: 0, $left: 0, $width: 100%, $height: 100% );
+    background-color: #f4f4f4;
+    border-radius: $border-radius-xl;
+  }
+
+  // El: details
+  &__details {
+    background-color: #fff;
+    max-width: 355px;
+    border-radius: $border-radius-section;
+    @include padding( 25px 30px );
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 4px 10px 0 rgba(#000, .1);
+  }
+
+  // El: title
+  &__title {
+    @include margin( 20px, 'bottom' );
+  }
+}

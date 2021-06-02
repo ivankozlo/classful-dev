@@ -1,0 +1,22 @@
+// ====================================
+// assets/scss/components/_floating-label.scss
+// ====================================
+
+/* Component: floating-label */
+.floating-label {
+  @include position();
+  background: $white;
+  @include padding( 7px 7px 8px );
+  border-radius: $border-radius;
+  font-weight: $font-weight-bold;
+  @include font-size( 12px );
+  text-align: center;
+  line-height: 1.25;
+  color: $body-color;
+
+  // Mod: tf-icon
+  &--tf-icon {
+    @include bg-img-full( 'tf-small-icon.svg', $white, $position: 8px center );
+    @include padding( 29px, 'left' );
+  }
+}

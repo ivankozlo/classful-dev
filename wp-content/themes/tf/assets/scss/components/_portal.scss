@@ -1,0 +1,93 @@
+// ===================================
+// assets/scss/components/_.portal.scss
+// ==================================
+
+/* Component: .portal */
+.portal {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+
+  // p {
+
+  //   a {
+  //     color: $secondary;
+
+  //     &:hover {
+  //       color: $secondary-hover;
+  //     }
+  //   }
+  // }
+
+  // El: navbar
+  &__navbar {
+    flex-shrink: 0;
+  }
+
+  // El: main
+  &__main {
+    flex-grow: 2;
+    padding-left: 30px;
+  }
+
+  // El: sidebar
+  &__sidebar {
+    @include width( 296px );
+    margin-left: 29px;
+
+    // Mod: outline
+    &--outline {
+      @include padding( 30px 30px );
+      border-radius: $border-radius-section;
+      border: 1px solid $border-color;
+    }
+  }
+
+  // Mod: profile
+  &--profile {
+
+    .portal__sidebar {
+      width: 325px;
+    }
+  }
+}
+
+.portal-cta {
+  min-height: 60px;
+  font-size: $font-size-xs;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include margin( 12px, 'bottom' );
+  text-transform: none;
+
+  i, span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &.btn-with-icon {
+
+    i {
+      @include margin( 10px, 'right' );
+    }
+  }
+}
+
+// Settings pages
+.settings-main {
+
+  // Responsive: > x-large
+  @include bp-x-large-min {
+    max-width: none;
+  }
+}
+
+.settings-sidebar {
+
+  // Responsive: > x-large
+  @include bp-x-large-min {
+    width: 325px + $grid-gutter-width;
+    max-width: 325px + $grid-gutter-width;
+  }
+}

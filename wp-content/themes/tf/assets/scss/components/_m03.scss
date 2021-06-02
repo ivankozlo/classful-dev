@@ -1,0 +1,37 @@
+// ====================================
+// assets/scss/components/_m03.scss
+// ====================================
+
+/* Component: M03 */
+.m03 {
+  @include padding( 88px, 'top' );
+  @include padding( 100px, 'bottom' );
+
+  // El: shape-1
+  // El: shape-2
+  &__shape-1,
+  &__shape-2 {
+
+  }
+
+  // El: shape-1
+  &__shape-1 {
+    bottom: 100%;
+    right: 100%;
+    @include margin( -333px, 'right' );
+    @include margin( -116px, 'bottom' );
+  }
+
+  // El: shape-2
+  &__shape-2 {
+    top: 100%;
+    left: 100%;
+    @include margin( -362px, 'left' );
+    @include margin( -130px, 'top' );
+  }
+
+  // El: heading
+  &__heading {
+    @include margin( 38px, 'bottom' );
+  }
+}

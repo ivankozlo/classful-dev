@@ -1,0 +1,27 @@
+// ====================================
+// assets/scss/components/_profile-counters.scss
+// ====================================
+
+/* Component: profile-counters */
+.profile-counters {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  .profile-counter {
+    @include padding( 0 20px );
+  }
+}
+
+.profile-counter {
+
+  // El: number
+  &__number {
+
+  }
+
+  // El: text
+  &__text {
+
+  }
+}
