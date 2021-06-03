@@ -1,4 +1,5 @@
 let selected_post_type = 'home'
+let post_attachment = ''
 let tags = []
 
 jQuery(document).ready(function($){
@@ -78,6 +79,11 @@ jQuery(document).ready(function($){
     selected_post_type = $(this).text().trim().toLowerCase()
     $('.post-type-item').removeClass('active')
     $(this).addClass('active')
+    if(selected_post_type == 'home'){
+      $('.create-post-section').removeClass('hidden')
+    }else{
+      $('.create-post-section').addClass('hidden')
+    }
   })
 
   $('input[name="tag-name"]').keyup(function(e){
@@ -101,12 +107,48 @@ jQuery(document).ready(function($){
     }
   })
   $('.showmore').click(function(){
-    if($('.post-tags').hasClass('showall')){
-      $('.post-tags').removeClass('showall')
-      $(this).text('View more')
-    }else{
-      $('.post-tags').addClass('showall')
+    if($(this).parent().find('.full-post').hasClass('hidden')){
       $(this).text('View less')
+      $(this).parent().find('.full-post').removeClass('hidden')
+      $(this).parent().find('.short-post').addClass('hidden')
+    }else{
+      $(this).text('View more')
+      $(this).parent().find('.full-post').addClass('hidden')
+      $(this).parent().find('.short-post').removeClass('hidden')
+    }
+  })
+  $('input[name="post-file-attachment"]').change(function(){
+    post_attachment = 'File selected'
+    $('.post-content-input').removeClass('hidden')
+  })
+  $('input[name="post-title-input"]').keyup(function(){
+    $('.post-title-validation').addClass('hidden')
+  })
+  $('button[name="post-submit"]').click(function(){
+    let post_title = $('input[name="post-title-input"]').val()
+    let post_discoverable = $('select[name="post-discoverable-option"]').val()
+    let post_link = $('input[name="post-link-input"]').val()
+    let post_tags = [...tags]
+    if(post_title){
+      $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: ajax_object.ajax_url + '?action=create_post_ajax',
+        data: {
+          post_title: post_title,
+          post_link: post_link,
+          post_tags: post_tags,
+          post_discoverable: post_discoverable
+        },
+        success: function (data) {
+          if(parseInt(data) > 0){
+            window.location.reload()
+          }
+        },
+        error: function (error) {}
+      });
+    }else{
+      $('.post-title-validation').removeClass('hidden')
     }
   })
 });

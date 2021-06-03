@@ -82,7 +82,7 @@ function tf_styles_scripts()
     wp_register_script('tf-js-croppie', $tf_theme_uri . '/assets/js/dist/vendor/croppie.min.js', array('jquery'), '', true);
     wp_register_script('tf-js-cropper', $tf_theme_uri . '/assets/js/dist/vendor/cropper.min.js', array('jquery'), '', true);
     wp_register_script('tf-js-jquery-cropper', $tf_theme_uri . '/assets/js/dist/vendor/jquery-cropper.min.js', array('jquery'), '', true);
-    
+
     wp_register_script('tf-js-cc-validation', $tf_theme_uri . '/assets/js/jquery.creditCardValidator.js', array('jquery'), '', true);
 
     // Comments
@@ -122,3 +122,63 @@ function tf_intermediate_image_sizes_advanced($sizes)
 
     return $sizes;
 }
+
+
+
+
+
+// Post link meta
+function link_meta_box_markup($post)
+{
+  $value = get_post_meta( $post->ID, '_link_post_meta', true );
+  echo "<a href='" . $value . "'>" . $value . "</a>";
+}
+
+function add_link_meta_box()
+{
+  add_meta_box("post-link-meta-box", "Post link", "link_meta_box_markup", "post", "side", "high", null);
+}
+
+add_action("add_meta_boxes", "add_link_meta_box");
+
+
+// Discoverable meta
+function discoverable_meta_box_markup($post)
+{
+  $value = get_post_meta( $post->ID, '_discoverable_post_meta', true );
+  echo "Post discoverable: " . $value;
+}
+
+function add_discoverable_meta_box()
+{
+  add_meta_box("post-link-meta-box", "Post link", "discoverable_meta_box_markup", "post", "side", "high", null);
+}
+
+add_action("add_meta_boxes", "add_discoverable_meta_box");
+
+
+function create_post_ajax(){
+
+  $cat_id = wp_create_category('feeds');
+
+  $post_title = $_POST["post_title"];
+  $post_link = $_POST["post_link"];
+  $post_tags = $_POST["post_tags"];
+  $post_discoverable = $_POST["post_discoverable"];
+
+  $post = array(
+    'post_title' => $post_title,
+    'tags_input' => $post_tags,
+    'post_status' => 'publish',
+    'post_category' => array($cat_id)
+  );
+
+  $post_id = wp_insert_post($post);
+  add_post_meta($post_id, '_link_post_meta', $post_link);
+  add_post_meta($post_id, '_discoverable_post_meta', $post_discoverable);
+
+  echo $post_id;
+}
+
+add_action('wp_ajax_nopriv_create_post_ajax', 'create_post_ajax');
+add_action('wp_ajax_create_post_ajax', 'create_post_ajax');

@@ -43,7 +43,7 @@ if (!preg_match('/^\/dashboard\//i', $_SERVER['REQUEST_URI']))
         <div class="banner-top-default__inner">
             <h1 class="page-title"><?php echo $post_title; ?></h1>
         </div>
-        
+
         <img class="banner-top-default__img" src="<?php echo get_template_directory_uri() . '/assets/img/decorative-brush-white.svg'; ?>" alt="">
     </div>
     <?php
@@ -67,7 +67,7 @@ while (have_posts())
     the_content();
 }
 ?>
-        
+
 <?php
 if (!$is_login && !$is_portal)
 {
